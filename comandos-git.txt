@@ -1,0 +1,30 @@
+SI TE PREGUNTA ¿QUIÉN ERES?
+-----------------------------------------------------
+git config --global user.email "tu correo"
+git config --global user.name "tu usuario"
+
+
+CACHEAR EL TOKEN DE ACCESO
+-----------------------------------------------------
+git config --global credential.helper cache
+
+
+
+PRIMERA SUBIDA
+-----------------------------------------------------
+
+cd /home/agustin/workspace/dwec
+touch Readme.md
+git init
+git add .
+git commit -m "primero"
+git branch -M main
+git remote add origin https://github.com/--------/DWEC-AAM-2023.git
+git push -u origin main
+
+RESTO SUBIDAS  -> comprueba que la rama es la deseada ¿main?
+-------------------------------------------------------------------------------------------
+git pull origin
+git add .
+git commit -m "mensaje"
+git push -u origin main

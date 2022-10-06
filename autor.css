@@ -1,0 +1,55 @@
+/* display: inline, inline-block, block, none; */
+/* block agrupa todo, dentro inline-block para la misma línea */
+
+html, body, main{
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-color: aqua;
+}
+main{
+    background-color: pink;
+    display: inline-block;
+}
+.a1, .a2, .a3{
+    float: left;
+    margin-top: 10%;
+    margin-left: 2.2%;
+    width: 30%;
+}
+.a1{
+    background-color: red;
+    text-align: center;
+}
+.a2{
+    background-color: yellow;
+    text-align: center;
+}
+.a3{
+    background-color: green;
+    text-align: center;
+}
+footer{
+    background-color: aqua;
+}
+#contacto, #redes{
+    display: inline-block;
+    margin: 5%;
+}
+#redes{
+    float: right;
+}
+
+#autor{
+    text-align: center;
+}
+#fotoA{
+    height: 200px;
+    width: 200px;
+}
+#red{
+    height: 200px;
+    width: auto;
+}
