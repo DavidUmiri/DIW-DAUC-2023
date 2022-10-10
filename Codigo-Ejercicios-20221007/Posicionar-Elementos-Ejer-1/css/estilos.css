@@ -22,7 +22,6 @@ body {
   position: sticky;
   top: 0px;
   z-index: 100;
-  text-align: center;
 }
 
 .container nav div {
@@ -105,15 +104,4 @@ figure:hover {
 .fixed-sidebar img {
   margin: 5%;
   width: 90%;
-}
-
-#foo {
-  position: fixed;
-  column-count: 2;
-  bottom: 0px;
-  width: 80%;
-  column-rule: 10px red;
-}
-#foo div p {
-  margin-top: 0px;
 }
