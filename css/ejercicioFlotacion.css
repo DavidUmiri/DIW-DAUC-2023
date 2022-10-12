@@ -19,22 +19,25 @@ nav {
   color: white;
   padding: 10px;
 }
+.sidebar div {
+  padding-top: 10px;
+}
 .sidebar {
-  margin-top: 40px;
   float: left;
   background-color: black;
   color: white;
   width: 15%;
   height: 500px;
   padding: 10px;
+  margin-top: 30px;
 }
 .courses {
   float: left;
   padding: 10px;
-  margin-top: 30px;
   text-align: center;
-  width: 80%;
-  margin-left: 5%;
+  width: 81%;
+  margin-left: 3.3%;
+  margin-top: 20px;
 }
 .course {
   width: 33.3%;
@@ -53,7 +56,8 @@ nav {
   float: left;
   width: 80%;
   margin-left: 5%;
-  text-align: left;
+  margin-top: 20px;
+  text-align: initial;
 }
 article {
   width: 33.3%;
