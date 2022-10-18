@@ -9,6 +9,7 @@ main {
 header {
   background-color: aqua;
   text-align: center;
+  position: sticky;
 }
 main {
   background-color: pink;
@@ -22,7 +23,11 @@ article {
   margin-bottom: 2%;
   margin-top: 2%;
 }
-section .a1 {
+img {
+  height: 200px;
+  width: 200px;
+}
+.a1 {
   background-color: red;
 }
 .a2 {
@@ -34,16 +39,14 @@ section .a1 {
 footer {
   margin-top: 2%;
   background-color: aqua;
+  column-count: 6;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 10px;
+  column-rule-color: red;
 }
-#contacto,
-#redes {
-  display: inline-block;
-  margin: 5%;
-}
-#redes {
-  float: right;
-}
-img {
-  height: 200px;
-  width: 200px;
+
+footer img {
+  height: 50px;
+  width: 50px;
 }

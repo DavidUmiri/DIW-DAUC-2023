@@ -1,0 +1,8 @@
+* {
+  background-color: pink;
+}
+
+:checked {
+  width: 10em;
+  height: 10em;
+}
