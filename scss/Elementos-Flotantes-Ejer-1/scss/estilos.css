@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  background-color: black;
+  color: white;
+}
+nav div {
+  display: inline-block;
+  padding: 10px;
+  width: 15%;
+}
+
+.sidebar {
+  background-color: black;
+  color: white;
+  float: left;
+  height: 500px;
+  margin-top: 30px;
+  width: 15%;
+}
+.sidebar div {
+  padding: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+section.courses {
+  float: left;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.course {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 0.8em;
+  float: left;
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+  width: 33%;
+}
+
+.course img {
+  width: 50%;
+}
+
+.articles {
+  -moz-column-count: 3;
+       column-count: 3;
+  float: left;
+  margin-left: 5%;
+  margin-top: 30px;
+  width: 80%;
+}
+
+footer {
+  background-color: red;
+  color: lime;
+  clear: both;
+  padding: 20px;
+  text-align: center;
+}/*# sourceMappingURL=estilos.css.map */
