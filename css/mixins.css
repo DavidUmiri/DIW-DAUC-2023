@@ -1,0 +1,15 @@
+h1 {
+  background-color: red;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+}
+
+p {
+  background-color: green;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+
+/*# sourceMappingURL=mixins.css.map */

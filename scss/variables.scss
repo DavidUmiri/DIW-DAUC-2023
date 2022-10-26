@@ -1,0 +1,31 @@
+// utilizar una variable
+$color_verde: green;
+$color_rojo: red;
+
+// lista de colores
+$colores: (red, yellow, green);
+$rojo: nth($colores, 1);
+$amarillo: nth($colores, 2);
+$verde: nth($colores, 3);
+
+// usar en el buscaminas
+$mapaColores: (
+  "rojo": red,
+  "azul": blue,
+  "morado": purple,
+);
+
+// interpolacion, añade la variable al selector
+$tipo: "error";
+.btn-#{$tipo} {
+  color: red;
+}
+
+h1 {
+  //   color: $color_verde;
+  //   color: $rojo;
+  color: map-get($mapaColores, "azul"); // usar en el buscaminas
+}
+p {
+  color: $verde;
+}

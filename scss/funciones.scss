@@ -1,0 +1,19 @@
+$borde: 1em;
+$color: red;
+
+// funcion, 600px/4 = 150
+@function calcularTam($longitud: 600, $numElementos: 4) {
+  @return $longitud / $numElementos;
+}
+
+h1 {
+  background: $color;
+  //   border: 1.1em solid #990000;
+  border: ($borde + 0.1em) solid darken($color, 20%); // rojo 20% más oscuro
+}
+
+p {
+  //   background: #ff6666;
+  background: lighten($color, 30%); // rojo 30% más claro
+  border: ($borde - 0.1em) solid $color;
+}

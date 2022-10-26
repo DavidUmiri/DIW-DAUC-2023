@@ -1,0 +1,26 @@
+// plantilla
+@mixin bordes-redondeados($color, $height: 150px, $radio: 15px) {
+  background-color: $color;
+  border-radius: $radio;
+  -webkit-border-radius: $radio;
+  -moz-border-radius: $radio;
+}
+
+h1 {
+  // height: 600px;
+  // background: red;
+  // border-radius: 60px;
+  // -webkit-border-radius: 60px;
+  // -moz-border-radius: 60px;
+  // @include bordes-redondeados($height: 600px, $radio: 60px);
+  @include bordes-redondeados(red, 600px, 60px);
+}
+
+p {
+  // height: 150px;
+  // background: green;
+  // border-radius: 15px;
+  // -webkit-border-radius: 15px;
+  // -moz-border-radius: 15px;
+  @include bordes-redondeados($color: green);
+}
