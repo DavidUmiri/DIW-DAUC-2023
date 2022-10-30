@@ -1,25 +1,26 @@
-// rehacer mediante un for
-.item-1 {
-  font-size: 2em;
-}
-.item-2 {
-  font-size: 4em;
-}
-.item-3 {
-  font-size: 6em;
-}
+// // rehacer mediante un for
+// .item-1 {
+//   font-size: 2em;
+// }
+// .item-2 {
+//   font-size: 4em;
+// }
+// .item-3 {
+//   font-size: 6em;
+// }
 
 // for
-@for $i from 1 to 4 {
-  .item-#{$i} {
-    font-size: 2em * $i;
-  }
-}
+// @for $i from 1 to 4 {
+//   .item-#{$i} {
+//     font-size: 2em * $i;
+//   }
+// }
 
 // for each
-$items: item-1 item-2 item-3;
-.items {
-  @each $i in $items {
-    font-size: 2em;
+$sizes: 1, 2, 3;
+
+@each $size in $sizes {
+  .item-#{$size} {
+    font-size: $size * 2em;
   }
 }
