@@ -1,0 +1,85 @@
+// Paletas de colores básica
+$mapaColor: (
+  "background": #ffffff,
+  "base": #333333,
+);
+
+$mapaBorderRadius: (
+  "small": 0.5rem,
+  "medium": 0.8rem,
+  "big": 2rem,
+);
+
+// Colores generales, ¿Puedes utilizar otro tipo de dato? ¿array? ¿map?
+$color-background: #ffffff;
+$color-base: #333333;
+
+// VAIABLES con los colores de la barra de menú
+$navbar-background-color: rgb(155, 111, 145);
+$navbar-color-hover: map-get($mapaColor, background);
+
+// VARIABLE para el color del borde
+$border-color: map-get($mapaColor, base);
+
+// VARIABLE para el contenedor general de mi página
+$main-container-width: 80%;
+
+// VARIABLES para los bordes
+$border-width: 1px;
+$border-style: solid;
+$border-radius-small: 10px;
+$border-radius: 10px;
+$boder-radius-big: 10px;
+
+// VARIABLES para el figure
+$figure-width: 25%;
+
+.container {
+  width: $main-container-width;
+  margin: 0 auto;
+}
+
+/*Usando anidamiento crear la hoja de estilos para un menú */
+nav {
+  /* Zona de estilos del nav*/
+  background-color: $navbar-background-color;
+
+  ul {
+    /* Zona de estilos de la lista dentro del nav*/
+    list-style: none;
+    padding: 1rem;
+    li {
+      display: inline-block;
+      &.active {
+        font-weight: bolder;
+        color: white;
+      }
+      a {
+        margin-left: 10px;
+      }
+    }
+    :hover {
+      color: $navbar-color-hover;
+    }
+  }
+}
+
+/*Estructura de anidamiento para la figura (cards)*/
+
+figure.card {
+  /* Zona de estilos para las etiquetas img y figcaption*/
+  display: inline-block;
+  width: $figure-width;
+  border-color: $border-color;
+  border-width: $border-width;
+  border-style: $border-style;
+  border-radius: map-get($mapaBorderRadius, "small");
+  padding: 10px;
+  img {
+    width: 100%;
+    border-radius: map-get($mapaBorderRadius, "medium");
+  }
+  figcaption {
+    text-align: center;
+  }
+}
