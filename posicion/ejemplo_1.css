@@ -1,0 +1,32 @@
+* {
+  color: white;
+}
+.div_padre {
+  background-color: red;
+  height: 600px;
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.div_hijo_1 {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  margin: 40%;
+}
+.div_hijo_2 {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 0px;
+}
+.div_hijo_3 {
+  background-color: blueviolet;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+}
