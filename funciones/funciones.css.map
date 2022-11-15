@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/funciones.scss"],"names":[],"mappings":"AAQA;EACE,YARM;EAUN;;;AAGF;EAEE;EACA","file":"funciones.css"}
+{"version":3,"sources":["funciones.scss","funciones.css"],"names":[],"mappings":"AAQA;EACE,eARM;EAUN,2BAAA;ACRF;;ADWA;EAEE,mBAAA;EACA,uBAAA;ACTF","file":"funciones.css"}

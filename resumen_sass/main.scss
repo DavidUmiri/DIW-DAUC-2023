@@ -1,0 +1,105 @@
+// los comentarios en una sola linea son eliminados cuando Sass es compilado a CSS
+/* Los comentarios multilinea se mantienen */
+
+/* VARIABLES */
+$color_primario: green;
+$color_secundario: red;
+$letra_body: "Roboto", sans-serif;
+
+body {
+  background-color: $color_primario;
+  color: $color_secundario;
+  font-family: $letra_body;
+}
+
+/* @if, @else, @for, @while, @each */
+
+// @if, @else
+$debug: true !default;
+@mixin debugmode {
+  @if $debug {
+    @debug "Modo debug activado";
+    display: inline-block;
+  } @else {
+    display: none;
+  }
+}
+.info {
+  @include debugmode;
+}
+
+// @for, THROUGH incluye el ultimo valor, TO para antes del ultimo
+@for $c from 1 to 4 {
+  div:nth-of-type(#{$c}) {
+    left: ($c - 1) * 900 / 3;
+  }
+}
+
+@for $c from 1 through 3 {
+  .myclass-#{$c} {
+    color: rgb($c * 255 / 3, $c * 255 / 3, $c * 255 / 3);
+  }
+}
+
+// @while
+$columns: 4;
+$column-width: 80px;
+
+@while $columns > 0 {
+  .col-#{$columns} {
+    width: $column-width;
+    left: $column-width * ($columns - 1);
+  }
+
+  $columns: $columns - 1;
+}
+
+// @each
+$social-links: facebook twitter linkedin reddit;
+
+.social-links {
+  @each $sm in $social-links {
+    .icon-#{$sm} {
+      background-image: url("images/#{$sm}.png");
+    }
+  }
+}
+
+/* MIXINS */
+@mixin center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+div {
+  @include center;
+  background-color: $color_primario;
+}
+
+// mixins para crear una propiedad shorthand
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.rectangle {
+  @include size(100px, 60px);
+}
+.square {
+  @include size(40px, 40px);
+}
+
+/* FUNCIONES */
+// toma un tamaño objetivo y el tamaño de un padre y devuelve el porcentaje
+@function calculate_percentage($target-size, $parent-size) {
+  @return $target-size / $parent-size * 100%;
+}
+
+$main-content: calculate_percentage(600px, 960px);
+
+.main-content {
+  width: $main-content;
+}

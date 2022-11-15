@@ -1,0 +1,96 @@
+/* Los comentarios multilinea se mantienen */
+/* VARIABLES */
+body {
+  background-color: green;
+  color: red;
+  font-family: "Roboto", sans-serif;
+}
+
+/* @if, @else, @for, @while, @each */
+.info {
+  display: inline-block;
+}
+
+div:nth-of-type(1) {
+  left: 0;
+}
+
+div:nth-of-type(2) {
+  left: 300;
+}
+
+div:nth-of-type(3) {
+  left: 600;
+}
+
+.myclass-1 {
+  color: rgb(85, 85, 85);
+}
+
+.myclass-2 {
+  color: rgb(170, 170, 170);
+}
+
+.myclass-3 {
+  color: rgb(255, 255, 255);
+}
+
+.col-4 {
+  width: 80px;
+  left: 240px;
+}
+
+.col-3 {
+  width: 80px;
+  left: 160px;
+}
+
+.col-2 {
+  width: 80px;
+  left: 80px;
+}
+
+.col-1 {
+  width: 80px;
+  left: 0px;
+}
+
+.social-links .icon-facebook {
+  background-image: url("images/facebook.png");
+}
+.social-links .icon-twitter {
+  background-image: url("images/twitter.png");
+}
+.social-links .icon-linkedin {
+  background-image: url("images/linkedin.png");
+}
+.social-links .icon-reddit {
+  background-image: url("images/reddit.png");
+}
+
+/* MIXINS */
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: green;
+}
+
+.rectangle {
+  width: 100px;
+  height: 60px;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+}
+
+/* FUNCIONES */
+.main-content {
+  width: 62.5%;
+}
+
+/*# sourceMappingURL=main.css.map */

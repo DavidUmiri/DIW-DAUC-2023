@@ -10,8 +10,6 @@
 #header p a {
   text-decoration: none;
 }
-#header p:hover {
+#header p a:hover {
   color: green;
-}
-
-/*# sourceMappingURL=anidadas.css.map */
+}/*# sourceMappingURL=anidadas.css.map */
