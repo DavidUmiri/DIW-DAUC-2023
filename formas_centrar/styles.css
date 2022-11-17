@@ -1,0 +1,103 @@
+/* 
+
+FORMA 1:
+width: fit-content;
+margin: 0 auto;
+
+FORMA 2 (NO APRENDER):
+height: 400px;
+line-height: 400px;
+text-align: center;
+
+FORMA 3 (IMPORTANTE):
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+FORMA 4:
+display: flex;
+justify-content: center;
+align-items: center;
+
+FORMA 5:
+.grid .center{
+    display: grid;
+}
+.grid .grid-item{
+    align-self: center;
+    justify-self: center;
+}
+
+*/
+html,
+body {
+  box-sizing: border-box;
+}
+.contenedor {
+  background-color: black;
+  height: 800px;
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hijo1 {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+}
+.hijo2 {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+.hijo3 {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+}
+.hijo4 {
+  background-color: purple;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.hijo5 {
+  background-color: orange;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav {
+  background-color: hotpink;
+  column-count: 3;
+  column-rule: dotted 1px white;
+  padding: 1%;
+  list-style: none;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+}
+footer {
+  background-color: hotpink;
+  column-count: 3;
+  padding: 1%;
+  list-style: none;
+  position: sticky;
+  z-index: 1;
+  bottom: 0;
+  text-align: center;
+}
