@@ -1,0 +1,111 @@
+/*******************************************************
+*    EJERCICIO MAP
+********************************************************/
+/* 
+Crear una variable colores, que sea de tipo map. Para almacenar los valores red, blue y green con las claves rojo, verde y azul. 
+Indicar como acceder al valor asociado a la clave verde 
+*/
+$colores: (
+  "rojo": red,
+  "verde": green,
+  "azul": blue,
+);
+// para acceder al map de colores: map-get($colores, $indice), en nuestro ejemplo para acceder al azul ($colores, "azul");
+
+/*******************************************************
+*    EJERCICIO DE MIXINS
+********************************************************/
+/* 
+Definir y utilizar un mixin en sass, para obtener el siguiente código css
+ el mixin se debe llamar tamanio y debe recibir 2 parámetros (ancho y alto)(con los valores por defecto 40px en ambos parámetros)
+ */
+@mixin tamanio($ancho: 40px, $alto: 40px) {
+  width: $ancho;
+  height: $alto;
+}
+.rectangulo {
+  @include tamanio(100px, 60px);
+}
+.cuadrado {
+  @include tamanio();
+}
+/*.rectangulo {
+  width: 100px;
+  height: 60px;
+}
+
+.cuadrado {
+  width: 40px;
+  height: 40px;
+}*/
+
+/* ------------------------------------------------------- */
+/* Definir y utilizar un mixin en sass llamado mostrarDebug, para obtener el siguiente código css
+El valor de la propiedad display será establecido en función de una variable llamada $debug. 
+    - En caso de tener la variable el valor true, la propiedad display debe tener el valor inline block
+    - En caso de tener la variable el valor false, la propiedad display debe tener el valor none
+*/
+$debug: true;
+
+@mixin mostrarDebug($debug: true) {
+  @if $debug == true {
+    display: inline-block;
+  } @else {
+    display: none;
+  }
+}
+
+/* Resultado */
+.info {
+  @include mostrarDebug();
+}
+
+/*******************************************************
+*    EJERCICIO DE EACH
+********************************************************/
+/* ------------------------------------------------------- */
+/* Utiliza la estructura each en sass e interpolación, para simplificar el código css:
+ Aclaración, debes utilizar la variable $redes:
+     $redes: facebook twitter instagram;
+*/
+$redes: ("facebook", "twitter", "instagram");
+
+@each $i in $redes {
+  .redes .icono-#{$i} {
+    background-image: url("img/#{$i}.png");
+  }
+}
+
+// .redes .icono-facebook {
+//   background-image: url("img/facebook.png");
+// }
+
+// .redes .icono-twitter {
+//   background-image: url("img/twitter.png");
+// }
+
+// .redes .icono-instagram {
+//   background-image: url("img/instagram.png");
+// }
+
+/*******************************************************
+*    EJERCICIO DE FOR
+********************************************************/
+/* Utilizando únicamente la estructura for en sass e interpolación, reducir el siguiente código css*/
+@for $i from 1 through 3 {
+  div.elemento-#{$i}:nth-of-type(#{$i}) {
+    left: 900px / $i;
+  }
+}
+
+// div.elemento-1:nth-of-type(1) {
+//   left: 900px;
+// }
+
+// div.elemento-2:nth-of-type(2) {
+//   left: 450px;
+// }
+
+// div.elemento-3:nth-of-type(3) {
+//   left: 300px;
+// }

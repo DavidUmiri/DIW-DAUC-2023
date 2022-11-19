@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+    ELEMENTOS SUPERIORES
+*/
+header {
+  position: sticky;
+  top: 7px;
+  z-index: 1;
+}
+header img {
+  height: 200px;
+  width: 100%;
+}
+nav {
+  /*position:*/
+  position: static;
+  text-align: right;
+}
+
+body > nav a,
+body > nav i {
+  margin-right: 5%;
+  padding: 20px;
+  color: black;
+}
+
+/*
+    ELEMENTOS CENTRALES
+*/
+body {
+  background: lightgray;
+}
+main {
+  float: left;
+  background-color: white;
+  column-count: 3;
+  text-align: center;
+  width: 60%;
+}
+
+div.infoArticulo {
+  background-color: aquamarine;
+}
+main article {
+  padding: 20px;
+}
+main article > img {
+  border-radius: 2%;
+}
+.titularArticulo {
+  padding: 10px;
+}
+
+/* POSICIONAMIENTO DEL ASIDE*/
+aside {
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  height: 605px;
+}
+aside > nav {
+  text-align: center;
+}
+
+aside > nav a {
+  background-color: white;
+  display: block;
+  padding: 5px;
+  text-transform: uppercase;
+  border-style: solid;
+  border-radius: 1%;
+  margin-top: 30px;
+  margin-bottom: 10%;
+  border-color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/*
+FORMULARIO
+*/
+form {
+  background-color: white;
+  border-radius: 2%;
+  border-style: solid;
+  border-color: white;
+  padding: 10px;
+  /* display: inline-block; */
+}
+
+form label {
+  color: black;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  display: inline-block;
+  width: 350px;
+  padding: 5px 5px;
+}
+
+form input[type="submit"],
+button {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+}
+
+/*
+    ELEMENTOS INFERIORES
+*/
+
+footer {
+  position: fixed;
+  bottom: 0px;
+}
+footer > h2 {
+  font-family: Arial black;
+  font-weight: bold;
+  font-size: 30px;
+  background: #202020;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.4),
+    0px -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*
+    Autor
+*/
+
+p#idAutor {
+  float: left;
+  /* position: absolute; */
+  font-style: italic;
+  background-color: #eee;
+
+  margin: 2%;
+  width: 80%;
+  text-align: center;
+  padding: 2px;
+}
