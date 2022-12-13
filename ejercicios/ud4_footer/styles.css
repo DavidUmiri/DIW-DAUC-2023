@@ -61,7 +61,7 @@ form {
 }
 .ft-main {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* en filas */
 }
 input[type="email"] {
   border: 0;
