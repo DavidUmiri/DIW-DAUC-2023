@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
   border: 1px solid black;
+  border-radius: 5px;
+}
+html,body{
+  border: none;
 }
 body > footer div {
   color: white;
@@ -12,77 +16,68 @@ body > footer div {
     background-color: silver;
   }
   header {
-    background-color: red;
+    background-color: rgb(155, 32, 32);
     height: 100px;
     width: 100%;
   }
   nav {
-    background-color: yellow;
+    background-color: rgb(214, 214, 76);
     height: 100px;
   }
   /*************************************************************
   EL MAIN SE COLOCA SIN UTILIZAR FLEX NI POSITION 
   *************************************************************/
   main {
-    background-color: green;
     height: 500px;
-    width: 60%;
+    width: 100%;
   }
   /*************************************************************
-  EL CONTENIDO DE S1 SE COLOCA EN FILAS (CON DESBORDAMIENTO)
+  EL CONTENIDO DE S1 (CON DESBORDAMIENTO)
   *************************************************************/
   .s1 {
     background-color: peru;
     height: 400px;
     width: 100%;
   }
-  /*************************************************************
-  ARTICULOS CON ANCHOS (PORCENTAJE)
-  *************************************************************/
+
   .s1 article {
-    height: 100px;
-    background-color: cyan;
+    background-color: rgb(68, 167, 167);
     border: 1px solid black;
   }
   main footer {
-    background-color: purple;
+    background-color: rgb(146, 59, 146);
     width: 100%;
     height: 100px;
   }
   /*************************************************************
-  EL ASIDE SE COLOCA SIN UTILIZAR POSITION
+  EL ASIDE SE COLOCA SIN UTILIZAR POSITION NI FLEX
   *************************************************************/
   aside {
-    background-color: blue;
     height: 500px;
-    width: 40%;
+    width: 100%;
   }
   /*************************************************************
-  EL CONTENIDO DEL S2 SE ENCUENTRA EN COLUMNAS
+  EL CONTENIDO DEL S2 
   *************************************************************/
   .s2 {
-    background-color: lime;
+    background-color: rgb(70, 163, 70);
     height: 500px;
     width: 100%;
   }
   .s2 > article {
-    background-color: violet;
-    height: 100px;
-    width: 80%;
+    background-color: rgb(206, 145, 206);
     border: 1px solid black;
   }
   /************************************************************* 
-  EL CONTENIDO DEL FOOTER SE ENCUENTRA EN FILAS
+  EL  FOOTER SIN UTILIZAR POSITION
   *************************************************************/
   body > footer {
-    background-color: aqua;
+    background-color: rgb(68, 167, 167);
     height: 100px;
     width: 100%;
   }
   body > footer div {
-    background-color: darkred;
-    height: 10px;
-    width: 100px;
+    background-color: rgb(179, 37, 37);
     border: 1px solid black;
   }
   body > footer div:nth-child(2) {
@@ -96,21 +91,20 @@ body > footer div {
     background-color: black;
   }
   header {
-    background-color: red;
+    background-color: rgb(155, 32, 32);
     height: 100px;
     width: 100%;
   }
   nav {
-    background-color: yellow;
+    background-color: rgb(214, 214, 76);
     height: 100px;
   }
   main {
-    background-color: green;
     height: 500px;
     width: 100%;
   }
   /*************************************************************
-  EL CONTENIDO DEL S1 SE COLOCA EN FILAS (CON DESBORDAMIENTO)
+  EL CONTENIDO DEL S1 (CON DESBORDAMIENTO)
   *************************************************************/
   .s1 {
     background-color: peru;
@@ -118,53 +112,45 @@ body > footer div {
     width: 100%;
   }
   .s1 article {
-    width: 30%;
-    height: 100px;
-    background-color: cyan;
+    background-color: rgb(68, 167, 167);
     border: 1px solid black;
   }
   .s1 article:nth-child(4) {
   }
   main footer {
-    background-color: purple;
+    background-color:rgb(146, 59, 146);
     width: 100%;
     height: 100px;
   }
   aside {
-    background-color: blue;
     height: 500px;
     width: 100%;
   }
   /*************************************************************
-  EL CONTENIDO DEL S2 SE COLOCA EN FILAS
+  EL CONTENIDO DEL S2
   *************************************************************/
   .s2 {
-    background-color: lime;
+    background-color: rgb(70, 163, 70);
     height: 500px;
     width: 100%;
   }
   .s2 > article {
-    background-color: violet;
-    height: 100px;
-    width: 30%;
+    background-color: rgb(206, 145, 206);
+
     border: 1px solid black;
   }
   .s2 article:nth-child(2) {
-    margin-top: 10px;
   }
   /*************************************************************
-  EL CONTENIDO DEL FOOTER SE COLOCA EN FILAS
+  EL CONTENIDO DEL FOOTER 
   *************************************************************/
   body > footer {
-    background-color: aqua;
-
+    background-color:rgb(68, 167, 167);
     height: 100px;
     width: 100%;
   }
   body > footer div {
-    background-color: darkred;
-    height: 90px;
-    width: 100px;
+    background-color: rgb(179, 37, 37);
     border: 1px solid black;
   }
 
@@ -180,21 +166,23 @@ body > footer div {
   }
 
   header {
-    background-color: red;
+    background-color:rgb(155, 32, 32);
     height: 100px;
     width: 100%;
   }
+   /*************************************************************
+  CUANDO SE HAGA SCROLL EL NAV TIENE SEGUIR APARECIENDO.NO UTILIZAR POSITION
+  *************************************************************/
   nav {
-    background-color: yellow;
+    background-color: rgb(214, 214, 76);
     height: 100px;
   }
   main {
-    background-color: green;
     height: 500px;
     width: 100%;
   }
   /*************************************************************
-  EL CONTENIDO DEL S1 SE COLOCA EN COLUMNAS
+  EL CONTENIDO DEL S1
   *************************************************************/
   .s1 {
     background-color: peru;
@@ -202,59 +190,51 @@ body > footer div {
     width: 100%;
   }
   .s1 article {
-    width: 30%;
-    height: 100px;
-    background-color: cyan;
+    background-color: rgb(44, 151, 151);
   }
   .s1 article:nth-child(4) {
-    display: none;
   }
   .s1 article:nth-child(2) {
-    display: none;
   }
   main footer {
-    background-color: purple;
+    background-color:  rgb(146, 59, 146);
     width: 100%;
     height: 100px;
   }
   /*************************************************************
-  EL CONTENIDO DEL ASIDE SE COLOCA EN FILAS
+  EL CONTENIDO DEL ASIDE 
   *************************************************************/
   aside {
-    background-color: blue;
     height: 500px;
     width: 100%;
   }
   /*************************************************************
-  EL CONTENIDO DEL S2 SE COLOCA EN COLUMNAS
+  EL CONTENIDO DEL S2 
   *************************************************************/
   .s2 {
-    background-color: lime;
+    background-color: rgb(70, 163, 70);
     height: 500px;
     width: 100%;
   }
   .s2 > article {
-    background-color: violet;
-    height: 100px;
-    width: 30%;
+    background-color: rgb(206, 145, 206);
   }
   .s2 article:nth-child(2) {
-    margin-top: 10px;
   }
-  /*************************************************************
-  EL CONTENIDO DEL FOOTER SE COLOCA EN COLUMNAS
+   /*************************************************************
+  CUANDO SE HAGA SCROLL EL FOOTER TIENE SEGUIR APARECIENDO.NO USAR POSITION
   *************************************************************/
   body > footer {
-    background-color: aqua;
-
+    background-color: rgb(44, 151, 151);
     height: 100px;
     width: 100%;
   }
   body > footer div {
-    background-color: darkred;
-    width: 100px;
+    background-color: rgb(179, 37, 37);
   }
-
+  /*************************************************************
+  NO UTILIZAR MARGIN NI GAP PARA LOS DIVS DEL FOOTER
+  *************************************************************/
   body > footer div:nth-child(2) {
   }
   body > footer div:nth-child(1) {
