@@ -48,8 +48,8 @@ body > footer div {
     height: 100px;
   }
   aside {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     float: left;
     background-color: blue;
     height: 500px;

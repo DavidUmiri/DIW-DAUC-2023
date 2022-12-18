@@ -54,12 +54,10 @@ body > footer div {
     height: 100px;
   }
   /*************************************************************
-  EL ASIDE SE COLOCA SIN UTILIZAR POSITION 
+  EL ASIDE SE COLOCA SIN UTILIZAR POSITION
   *************************************************************/
   aside {
-    /* display: flex;
-    flex-direction: row;
-    float: left; */
+    /* float: left; */
     background-color: blue;
     height: 500px;
     width: 40%;
@@ -84,15 +82,15 @@ body > footer div {
     border: 1px solid black;
   }
   /************************************************************* 
-  EL CONTENIDO DEL FOOTER SE ENCUENTRA EN UNA FILA
+  EL CONTENIDO DEL FOOTER SE ENCUENTRA EN FILAS
   *************************************************************/
   body > footer {
     background-color: aqua;
     /* display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; */
-    /* float: left; */
+    align-items: center;
+    float: left; */
     height: 100px;
     width: 100%;
   }
@@ -103,8 +101,8 @@ body > footer div {
     border: 1px solid black;
   }
   body > footer div:nth-child(2) {
-    /* order: 3; */
-    /* align-self: flex-end; */
+    /* order: 3;
+    align-self: flex-end; */
   }
   body > footer div:nth-child(1) {
     /* align-self: flex-end; */
@@ -130,7 +128,7 @@ body > footer div {
     width: 100%;
   }
   /*************************************************************
-  EL CONTENIDO DE S1 SE COLOCA EN FILAS (CON DESBORDAMIENTO)
+  EL CONTENIDO DEL S1 SE COLOCA EN FILAS (CON DESBORDAMIENTO)
   *************************************************************/
   .s1 {
     /* display: flex;
@@ -164,11 +162,14 @@ body > footer div {
     height: 500px;
     width: 100%;
   }
+  /*************************************************************
+  EL CONTENIDO DEL S2 SE COLOCA EN FILAS
+  *************************************************************/
   .s2 {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: lime;
     height: 500px;
     width: 100%;
@@ -183,6 +184,9 @@ body > footer div {
     /* align-self: flex-start; */
     margin-top: 10px;
   }
+  /*************************************************************
+  EL CONTENIDO DEL FOOTER SE COLOCA EN FILAS
+  *************************************************************/
   body > footer {
     background-color: aqua;
     /* display: flex;
@@ -227,12 +231,15 @@ body > footer div {
     height: 500px;
     width: 100%;
   }
+  /*************************************************************
+  EL CONTENIDO DEL S1 SE COLOCA EN COLUMNAS
+  *************************************************************/
   .s1 {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 2px; */
     background-color: peru;
     height: 400px;
     width: 100%;
@@ -253,19 +260,24 @@ body > footer div {
     width: 100%;
     height: 100px;
   }
+  /*************************************************************
+  EL CONTENIDO DEL ASIDE SE COLOCA EN FILAS
+  *************************************************************/
   aside {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     background-color: blue;
     height: 500px;
     width: 100%;
   }
-
+  /*************************************************************
+  EL CONTENIDO DEL S2 SE COLOCA EN COLUMNAS
+  *************************************************************/
   .s2 {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: lime;
     height: 500px;
     width: 100%;
@@ -276,15 +288,18 @@ body > footer div {
     width: 30%;
   }
   .s2 article:nth-child(2) {
-    align-self: flex-start;
+    /* align-self: flex-start; */
     margin-top: 10px;
   }
+  /*************************************************************
+  EL CONTENIDO DEL FOOTER SE COLOCA EN COLUMNAS
+  *************************************************************/
   body > footer {
     background-color: aqua;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     height: 100px;
     width: 100%;
   }
@@ -294,17 +309,17 @@ body > footer div {
   }
 
   body > footer div:nth-child(2) {
-    order: 3;
+    /* order: 3;
     align-self: flex-end;
-    flex-basis: 15%;
+    flex-basis: 15%; */
   }
   body > footer div:nth-child(1) {
-    align-self: flex-end;
-    flex-basis: 15%;
+    /* align-self: flex-end;
+    flex-basis: 15%; */
   }
 
   body > footer div:nth-child(3) {
-    flex-basis: 15%;
-    flex-grow: 0.5;
+    /* flex-basis: 15%;
+    flex-grow: 0.5; */
   }
 }
