@@ -1,0 +1,12 @@
+Crea un diseño responsive como el mostrado en el ejemplo. 
+El diseño grande puntuará sobre 4, los otros dos sobre 3 cada uno. 
+Los tamaños usados como base en el ejemplo son: 
+-Tamaño grande: pantalla maximizada.
+-Tamaño medio: 778px de ancho y 900px de alto. 
+-Tamaño pequeño: 777px de ancho y 800px de alto.
+
+Pista: usa flex en todo lo relativo a posicionamiento y en el header y footer, además, position.
+
+
+
+
