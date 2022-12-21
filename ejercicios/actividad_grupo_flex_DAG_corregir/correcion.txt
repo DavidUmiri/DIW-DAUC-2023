@@ -1,0 +1,4 @@
+Sobra position sticky en el header de la pantalla mediana.
+En s1. article sobra el justify-items center.
+
+Tenéis un 10 pero hay propiedades que sobran.
