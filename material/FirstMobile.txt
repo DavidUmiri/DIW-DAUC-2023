@@ -17,11 +17,20 @@
 • only 
 
 ¿Que puntos de ruptura utilizar?
-• Pantallas extra-pequeñas  → Teléfonos, 600px y inferior @media only screen and (max-width: 600px) {…} 
-• Pantallas pequeñas  →  Tablets y Teléfonos grandes, 600px and superior @media only screen and (min-width: 600px) {…} 
-• Pantallas medias → landscape tablets, 768px and superior @media only screen and (min-width: 768px) {…} 
-• Pantallas grandes → portátiles/Escritorio, 992px and superior @media only screen and (min-width: 992px) {…} 
-• Pantallas extra grandes → Portátiles y escritorio grandes, 1200px and up @media only screen and (min-width: 1200px) {...}
+• Pantallas extra-pequeñas  → Teléfonos, 600px y inferior 
+@media only screen and (max-width: 600px) {…} 	
+
+• Pantallas pequeñas  →  Tablets y Teléfonos grandes, 600px and superior 
+@media only screen and (min-width: 600px) {…} 
+
+• Pantallas medias → landscape tablets, 768px and superior 
+@media only screen and (min-width: 768px) {…} 
+
+• Pantallas grandes → portátiles/Escritorio, 992px and superior 
+@media only screen and (min-width: 992px) {…} 
+
+• Pantallas extra grandes → Portátiles y escritorio grandes, 1200px and up 
+@media only screen and (min-width: 1200px) {...}
 
 Hojas de estilo diferentes Otra alternativa es utilizar hojas de estilo diferentes para cada tipo de tamaño (punto de ruptura)
 <link rel="stylesheet" media="(max-width: 576px)" href="small.css" />
@@ -29,4 +38,14 @@ Hojas de estilo diferentes Otra alternativa es utilizar hojas de estilo diferent
 <link rel="stylesheet" media="(max-width: 992px)" href="large.css" />
 
 
+Alinear vertical y horizontalmente a un hijo:
+display:flex;
+justify-content: center;
+align-items: center;
 
+Orientación horizontal:
+@media only screen and (orientation: landscape){
+body{
+background-color:lightblue;
+}
+}
