@@ -43,9 +43,18 @@ display:flex;
 justify-content: center;
 align-items: center;
 
-Orientación horizontal:
-@media only screen and (orientation: landscape){
-body{
-background-color:lightblue;
-}
-}
+Orientación horizontal: 
+@media only screen and (orientation: landscape){}
+
+// clase
+no usar px, usar %
+
+grid view --> estructura en columnas
+escritorio: 12 columnas
+tablet: 8 columnas
+móvil: 4 columnas
+
+imagen y video asociado al tema
+para imagenes --> max-height, asociado a un contenedor y que se ajuste
+
+footer --> el que hicimos con flexbox, iconos con redes sociales
