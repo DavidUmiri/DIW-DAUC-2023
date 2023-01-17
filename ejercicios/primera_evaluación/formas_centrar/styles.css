@@ -1,5 +1,4 @@
 /* 
-
 FORMA 1:
 width: fit-content;
 margin: 0 auto;
@@ -15,7 +14,7 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 
-FORMA 4: (IMPORTANTE)
+FORMA 4:
 display: flex;
 justify-content: center;
 align-items: center;
@@ -28,8 +27,8 @@ FORMA 5:
     align-self: center;
     justify-self: center;
 }
-
 */
+
 html,
 body {
   box-sizing: border-box;
