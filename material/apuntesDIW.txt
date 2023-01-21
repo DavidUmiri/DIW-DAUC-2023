@@ -1,0 +1,26 @@
+// gridView
+
+SVG --> imágenes
+
+ajustar imágenes --> 
+
+<div><img src=""></div>
+
+	div{
+		/* dimensiones deseadas */ 
+	}
+	img{
+		max-width: xxxx px;
+		width: 100%;
+	}
+
+diseño art-director --> 
+
+<div class="art">
+	<picture>
+		<source media="(min-width: 576px)" srcset="img/big-art.jpg" />
+		<source media="(max-width: 575px)" srcset="img/small-art.jpg" />
+		<img src="img/small-art.jpg" />
+		<!-- En caso de no soportar picture -->
+	</picture>
+</div>
