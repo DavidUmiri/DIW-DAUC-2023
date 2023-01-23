@@ -1,26 +1,26 @@
-body {
-    //background-image: radial-gradient(rgb(8, 8, 55), rgb(108, 108, 227));
-    //background-image: linear-gradient(180deg, rgb(128, 255, 128), hwb(244 0% 0%));
-    //background: radial-gradient(rgb(104, 170, 197) 40px, #052d55 65%, rgb(8, 8, 55) 70%);
-    background-color: rgb(8, 15, 40);
-    height: 100vh;
+/* ? */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
 }
 
-// ESCRITORIO
-@media only screen and (min-width: 768px) {
+[class*="col-"] {
+    width: 100%;
+}
 
-    $base: 8.333333333333%;
+/* For mobile phones: 4 columnas 2 peliculas por fila */
+@media only screen and (max-width: 600px) {
+    $base: 25%;
 
-    @for $i from 1 through 12 {
-        .col-e-#{$i} {
+    @for $i from 1 through 4 {
+        .col-#{$i} {
             width: ($base*$i);
         }
     }
-
-
 }
 
-@media only screen and (min-width: 601px) {
+/* For tablets: 8 columnas 4 peliculas por fila */
+@media only screen and (min-width: 600px) {
     $base: 12.5%;
 
     @for $i from 1 through 8 {
@@ -28,14 +28,14 @@ body {
             width: ($base*$i);
         }
     }
-
 }
 
-@media only screen and (max-width: 600px) {
-    $base: 25%;
+/* For desktop: 12 columnas 6 peliculas por fila */
+@media only screen and (min-width: 900px) {
+    $base: 8.333333333333%;
 
-    @for $i from 1 through 4 {
-        .col-#{$i} {
+    @for $i from 1 through 12 {
+        .col-e-#{$i} {
             width: ($base*$i);
         }
     }
@@ -51,50 +51,107 @@ body {
     display: table;
 }
 
-[class*="col-"] {
-    float: left;
-    padding: 5px;
-}
-
 html {
     font-family: "Lucida Sans", sans-serif;
 }
 
-.header {
-    color: #ffffff;
-    padding: 15px;
+body {
+    background-color: lightblue;
+    margin: 0px;
 }
 
-#cajaFotos div img {
+img {
+    height: 35vh;
     width: 100%;
-    max-height: 241px;
+    object-fit: cover;
 }
 
-video {
-    width: 100%;
-    height: auto;
-}
-
-.footer {
-    //background-color: #0099cc;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-}
-
-
-#texto {
-    color: #ffffff;
+.categorias {
+    background-color: lightcoral;
     text-align: center;
 }
 
-#textoInfo {
-    color: #ffffff;
-    margin-left: 12.5%;
+.informacion {
+    background-color: lightgreen;
     text-align: center;
 }
 
-#textoInfo1 {
-    text-align: justify;
+/*******************************************************************/
+// nav
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+nav {
+    margin-top: 40px;
+    padding: 24px;
+    text-align: center;
+    font-family: Raleway;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+
+#nav-1 {
+    background: #3fa46a;
+}
+
+#nav-2 {
+    background: #5175C0;
+}
+
+#nav-3 {
+    background: #EEA200;
+}
+
+.link-1 {
+    transition: 0.3s ease;
+    background: #3fa46a;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-top: 4px solid #3fa46a;
+    border-bottom: 4px solid #3fa46a;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.link-1:hover {
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 6px 0;
+}
+
+.link-2 {
+    transition: 0.6s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-right: 2px dotted transparent;
+    padding: 30px 8px 0 10px;
+    margin: 0 10px;
+}
+
+.link-2:hover {
+    border-right: 2px dotted #ffffff;
+    padding-bottom: 24px;
+}
+
+.link-3 {
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.link-3:hover {
+    background-color: #ffffff;
+    color: #EEA200;
+    padding: 24px 10px;
+}
+
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
+/*******************************************************************/
