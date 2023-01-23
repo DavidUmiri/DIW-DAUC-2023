@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+html,body{
+  border: none;
+}
+body > footer div {
+  color: white;
+}
+
+/* PANTALLA GRANDE */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: silver;
+  }
+  header {
+    background-color: rgb(155, 32, 32);
+    height: 100px;
+    width: 100%;
+  }
+  nav {
+    background-color: rgb(214, 214, 76);
+    height: 100px;
+  }
+  /*************************************************************
+  EL MAIN SE COLOCA SIN UTILIZAR FLEX NI POSITION 
+  *************************************************************/
+  main {
+    height: 500px;
+    width: 100%;
+  }
+  /*************************************************************
+  EL CONTENIDO DE S1 (CON DESBORDAMIENTO)
+  *************************************************************/
+  .s1 {
+    background-color: peru;
+    height: 400px;
+    width: 100%;
+  }
+
+  .s1 article {
+    background-color: rgb(68, 167, 167);
+    border: 1px solid black;
+  }
+  main footer {
+    background-color: rgb(146, 59, 146);
+    width: 100%;
+    height: 100px;
+  }
+  /*************************************************************
+  EL ASIDE SE COLOCA SIN UTILIZAR POSITION NI FLEX
+  *************************************************************/
+  aside {
+    height: 500px;
+    width: 100%;
+  }
+  /*************************************************************
+  EL CONTENIDO DEL S2 
+  *************************************************************/
+  .s2 {
+    background-color: rgb(70, 163, 70);
+    height: 500px;
+    width: 100%;
+  }
+  .s2 > article {
+    background-color: rgb(206, 145, 206);
+    border: 1px solid black;
+  }
+  /************************************************************* 
+  EL  FOOTER SIN UTILIZAR POSITION
+  *************************************************************/
+  body > footer {
+    background-color: rgb(68, 167, 167);
+    height: 100px;
+    width: 100%;
+  }
+  body > footer div {
+    background-color: rgb(179, 37, 37);
+    border: 1px solid black;
+  }
+  body > footer div:nth-child(2) {
+  }
+  body > footer div:nth-child(1) {
+  }
+}
+/* PANTALLA MEDIANA */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  body {
+    background-color: black;
+  }
+  header {
+    background-color: rgb(155, 32, 32);
+    height: 100px;
+    width: 100%;
+  }
+  nav {
+    background-color: rgb(214, 214, 76);
+    height: 100px;
+  }
+  main {
+    height: 500px;
+    width: 100%;
+  }
+  /*************************************************************
+  EL CONTENIDO DEL S1 (CON DESBORDAMIENTO)
+  *************************************************************/
+  .s1 {
+    background-color: peru;
+    height: 400px;
+    width: 100%;
+  }
+  .s1 article {
+    background-color: rgb(68, 167, 167);
+    border: 1px solid black;
+  }
+  .s1 article:nth-child(4) {
+  }
+  main footer {
+    background-color:rgb(146, 59, 146);
+    width: 100%;
+    height: 100px;
+  }
+  aside {
+    height: 500px;
+    width: 100%;
+  }
+  /*************************************************************
+  EL CONTENIDO DEL S2
+  *************************************************************/
+  .s2 {
+    background-color: rgb(70, 163, 70);
+    height: 500px;
+    width: 100%;
+  }
+  .s2 > article {
+    background-color: rgb(206, 145, 206);
+
+    border: 1px solid black;
+  }
+  .s2 article:nth-child(2) {
+  }
+  /*************************************************************
+  EL CONTENIDO DEL FOOTER 
+  *************************************************************/
+  body > footer {
+    background-color:rgb(68, 167, 167);
+    height: 100px;
+    width: 100%;
+  }
+  body > footer div {
+    background-color: rgb(179, 37, 37);
+    border: 1px solid black;
+  }
+
+  body > footer div:nth-child(2) {
+  }
+  body > footer div:nth-child(1) {
+  }
+}
+/* PANTALLA PEQUEÑA */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: darkorange;
+  }
+
+  header {
+    background-color:rgb(155, 32, 32);
+    height: 100px;
+    width: 100%;
+  }
+   /*************************************************************
+  CUANDO SE HAGA SCROLL EL NAV TIENE SEGUIR APARECIENDO.NO UTILIZAR POSITION
+  *************************************************************/
+  nav {
+    background-color: rgb(214, 214, 76);
+    height: 100px;
+  }
+  main {
+    height: 500px;
+    width: 100%;
+  }
+  /*************************************************************
+  EL CONTENIDO DEL S1
+  *************************************************************/
+  .s1 {
+    background-color: peru;
+    height: 400px;
+    width: 100%;
+  }
+  .s1 article {
+    background-color: rgb(44, 151, 151);
+  }
+  .s1 article:nth-child(4) {
+  }
+  .s1 article:nth-child(2) {
+  }
+  main footer {
+    background-color:  rgb(146, 59, 146);
+    width: 100%;
+    height: 100px;
+  }
+  /*************************************************************
+  EL CONTENIDO DEL ASIDE 
+  *************************************************************/
+  aside {
+    height: 500px;
+    width: 100%;
+  }
+  /*************************************************************
+  EL CONTENIDO DEL S2 
+  *************************************************************/
+  .s2 {
+    background-color: rgb(70, 163, 70);
+    height: 500px;
+    width: 100%;
+  }
+  .s2 > article {
+    background-color: rgb(206, 145, 206);
+  }
+  .s2 article:nth-child(2) {
+  }
+   /*************************************************************
+  CUANDO SE HAGA SCROLL EL FOOTER TIENE SEGUIR APARECIENDO.NO USAR POSITION
+  *************************************************************/
+  body > footer {
+    background-color: rgb(44, 151, 151);
+    height: 100px;
+    width: 100%;
+  }
+  body > footer div {
+    background-color: rgb(179, 37, 37);
+  }
+  /*************************************************************
+  NO UTILIZAR MARGIN NI GAP PARA LOS DIVS DEL FOOTER
+  *************************************************************/
+  body > footer div:nth-child(2) {
+  }
+  body > footer div:nth-child(1) {
+  }
+
+  body > footer div:nth-child(3) {
+  }
+}

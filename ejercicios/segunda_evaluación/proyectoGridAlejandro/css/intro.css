@@ -1,0 +1,140 @@
+body {
+  background-color: rgb(8, 15, 40);
+  height: 100vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-e-1 {
+    width: 8.3333333333%;
+  }
+  .col-e-2 {
+    width: 16.6666666667%;
+  }
+  .col-e-3 {
+    width: 25%;
+  }
+  .col-e-4 {
+    width: 33.3333333333%;
+  }
+  .col-e-5 {
+    width: 41.6666666667%;
+  }
+  .col-e-6 {
+    width: 50%;
+  }
+  .col-e-7 {
+    width: 58.3333333333%;
+  }
+  .col-e-8 {
+    width: 66.6666666667%;
+  }
+  .col-e-9 {
+    width: 75%;
+  }
+  .col-e-10 {
+    width: 83.3333333333%;
+  }
+  .col-e-11 {
+    width: 91.6666666667%;
+  }
+  .col-e-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .col-t-1 {
+    width: 12.5%;
+  }
+  .col-t-2 {
+    width: 25%;
+  }
+  .col-t-3 {
+    width: 37.5%;
+  }
+  .col-t-4 {
+    width: 50%;
+  }
+  .col-t-5 {
+    width: 62.5%;
+  }
+  .col-t-6 {
+    width: 75%;
+  }
+  .col-t-7 {
+    width: 87.5%;
+  }
+  .col-t-8 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .col-1 {
+    width: 25%;
+  }
+  .col-2 {
+    width: 50%;
+  }
+  .col-3 {
+    width: 75%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-] {
+  float: left;
+  padding: 5px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  color: #ffffff;
+  padding: 15px;
+}
+
+#cajaFotos div img {
+  width: 100%;
+  max-height: 241px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+#texto {
+  color: #ffffff;
+  text-align: center;
+}
+
+#textoInfo {
+  color: #ffffff;
+  margin-left: 12.5%;
+  text-align: center;
+}
+
+#textoInfo1 {
+  text-align: justify;
+}
+
+/*# sourceMappingURL=intro.css.map */

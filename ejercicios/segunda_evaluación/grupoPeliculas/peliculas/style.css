@@ -1,0 +1,123 @@
+/* para eliminar el solapamiento del float */
+.row::after {
+    content: "";
+    clear: both;
+    /* elimina la flotabilidad */
+    display: table;
+    /* display: block; */
+}
+
+/* todo elemento que tenga la clase col */
+[class*="col-"] {
+    float: left;
+    padding: 25px;
+}
+
+/* distribución en columnas */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* ************************************************ */
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: limegreen;
+    height: 200px;
+}
+
+p {
+    background-color: lightpink;
+    height: 50px;
+}
+
+nav {
+    background-color: lightseagreen;
+    height: 50px;
+}
+
+main {
+    background-color: lightskyblue;
+    height: 500px;
+    width: 100%;
+    padding: 50px;
+}
+
+#idCategorias {
+    background-color: lightcoral;
+    height: 50px;
+}
+
+#idVideo {
+    background-color: lightgreen;
+    height: 50px;
+}
+
+#idImagenes {
+    background-color: lightslategray;
+    height: 350px;
+}
+
+#idImagenes>div {
+    background-color: black;
+    height: 200px;
+    border: 2px solid white;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+#idFooter {
+    background-color: lightgreen;
+}
+
+section div img {
+    width: 100%;
+    height: 100%;
+}
