@@ -1,4 +1,3 @@
-/* ? */
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 [class*=col-] {
@@ -217,15 +216,12 @@ nav {
   color: #ffffff;
   font-size: 20px;
   text-decoration: none;
-  /* padding: 0 10px; */
-  /* margin: 0 10px; */
 }
 
 .link-3:hover {
   background-color: #ffffff;
   color: orange;
   text-decoration: none;
-  /* padding: 24px 10px; */
   cursor: pointer;
 }
 
@@ -233,13 +229,6 @@ nav {
 
 /* FOOTER */
 
-/* ------------------- Estilos Generales ---------------------- */
-/* * {
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  margin: 0;
-  padding: 0;
-} */
 
 ul {
   list-style: none;
@@ -268,18 +257,11 @@ a:hover {
   padding-bottom: 0.625rem;
 }
 
-/* ------------------- Mantener el Footer al final ---------------------- */
-/* body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-} */
 
 .container {
   flex: 1;
 }
 
-/* -----------------------Footer Principal ------------------------------------- */
 .ft-main {
   padding: 1.25rem 1.875rem;
   display: flex;
@@ -288,29 +270,11 @@ a:hover {
 }
 
 
-/* 477px */
-/* @media only screen and (min-width: 29.8125rem
-) {
-  .ft-main {
-    justify-content: space-evenly;
-  }
-} */
-
-/* 1240px */
-/* @media only screen and (min-width: 77.5rem
-
-) {
-  .ft-main {
-    justify-content: space-evenly;
-  }
-} */
-
 .ft-main-item {
   padding: 1.25rem;
   min-width: 12.5rem;
 }
 
-/* Footer main | Newsletter form */
 form {
   display: flex;
   flex-wrap: wrap;
@@ -331,7 +295,6 @@ input[type="submit"] {
   margin-top: 0.3125rem;
 }
 
-/* ----------------------- Footer Redes Sociales ------------------------------------- */
 .ft-social {
   padding: 0 1.875rem 1.25rem;
 }
@@ -348,7 +311,6 @@ input[type="submit"] {
   font-size: 1.25rem;
 }
 
-/* ----------------------- Footer Derechos de Autor  ------------------------------------- */
 .ft-legal {
   padding: 0.9375rem 1.875rem;
   background-color: #333;
@@ -365,15 +327,6 @@ input[type="submit"] {
   white-space: nowrap;
 }
 
-/*-------------- Usar para Colocar a la derecha "@2023 Ies Francisco de Goya" ---------------*/
 .ft-legal-list li:nth-last-child(2) {
   flex: 1;
 }
-
-/*******************************************************************/
-/*******************************************************************/
-/*******************************************************************/
-/*******************************************************************/
-/*******************************************************************/
-
-/*# sourceMappingURL=intro.css.map */
