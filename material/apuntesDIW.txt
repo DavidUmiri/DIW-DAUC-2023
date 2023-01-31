@@ -24,3 +24,134 @@ diseño art-director -->
 		<!-- En caso de no soportar picture -->
 	</picture>
 </div>
+
+// exámen --> gridview, animaciones y flex
+
+// animaciones
+
+transformaciones -->
+	translate()
+	scale()
+	rotate()
+	skewX()
+	skewY()
+
+escalado -->
+	selector {
+		transform: scale(valueX,valueY);
+		transform: scaleX(valueX);
+		transform: scaleY(valueY);
+	}
+
+translación -->
+	selector {
+		transform: translate(valueX,valueY);
+		transform: translateX(valueX);
+		transform: translateY(valueY);
+	}
+
+rotación -->
+	selector {
+		transform: rotate(angulo);
+	}
+
+sesgados -->
+	selector {
+		transform: skew(anguloX,anguloY);
+		transform: skewX(anguloX);
+		transform: skewY(anguloY);
+	}
+
+transformaciones conjuntas --> 
+
+	.img {
+	 transform: rotate(5deg) scale(2) translate(25px, 150px);
+	}
+
+transiciones -->
+
+transition: propiedadCSS duracion timing-function retardo
+
+ejemplo -->
+
+	.c-button {
+		padding: 10px 20px 10px 20px;
+	 	background-color: #ffffff;
+		border: 1px solid #bbd4f7;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: background-color 1s, box-shadow 1s;
+	}
+
+	 .c-button:hover {
+		background-color: #deebfc;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+animaciones --> 
+
+	@keyframes cambiar-color {
+
+		0% {
+			background: red; /* Primer fotograma */
+		}
+		50% {
+			background: yellow; /* Segundo fotograma */
+			width: 400px;
+		}
+		100% {
+			background: green; /* Último fotograma */
+		}
+	}
+	
+	.img {
+		background: grey;
+		color: #FFF;
+		width: 150px;
+		height: 150px;
+		animation: cambiar-color 2s ease 0s infinite;
+	}
+
+// 
+1. EJERCICIO 1 – CUBO I
+Crea una página web que:
+• Muestre un cuadrado rojo de 200px de lado.
+• Que al poner el cursor encima gire 45 grados y cambie su color a azul.
+• Que al quitar el curso vuelva a su posición y su color original.
+• Que dure 2 segundos
+
+//
+2. EJERCICIO 2 – CUBO II
+Crea una página web que:
+• Muestre un cuadrado rojo de 200px de lado.
+• Que al poner el cursor encima se cambia su ancho para ocupar 600px
+• Que al quitar el curso vuelva a su tamaño original.
+• Que dure 3 segundos.
+Crea un programa en JavaScript+HTML+CSS que el tamaño de un texto pase de los 12px iniciales a los
+30px finales y que tarde 3 segundos.
+
+//
+3. EJERCICIO 3 – FORMULARIO
+Crea una página web:
+• Que el fondo sea gris claro.
+• Muestre un input de tipo text de fondo blanco, bordes sin redondear.
+• Que al poner el cursor sobre él para escribir, se hagan los bordes redondeados, el color de fondo sea
+un azul muy clarito, se añada una sombra suave de color azul.
+• Que al quitar el curso el input vuelva a su etilo original.
+• Que dure 1 segundo
+
+//
+4. EJERCICIO 4 – TORRE PISA
+Crea una página web:
+• En el fondo se verá una foto con la torre de pisa.
+• Que sobre el borde superior de la torre coloques la imagen de una pelota.
+• Que al pulsar un botón se active una animación que deje caer la pelota hasta el suelo y al acabar se quede ahí.
+• Si se vuelve a pulsar el botón, repetirá la animación.
+• La duración de la animación será de 9,4s (Es lo que tardaría en caer una pelota desde la torre de pisa suponiendo que no hay rozamiento)
+Debes probar con distintas animation-timing-function y elegir la que se parezca mas a la caída real de la
+pelota. 
+
+//
+5. EJERCICIO 5 – CANASTA
+Repite el ejercicio anterior de la torre de pisa pero ahora será una canasta de baloncesto y una pelota de baloncesto.
+Otra diferencia es que la pelota al llegar abajo rebotará y volverá hasta arriba del todo y así indefinidamente.
