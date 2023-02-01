@@ -9,11 +9,10 @@
 </head>
 
 <body>
-    <div>
 
+    <div>
         <img id="canasta" src="canasta.png" alt="">
         <img id="balonBaloncesto" src="balonBaloncesto.png" alt="">
-
     </div>
 
     <style>
@@ -24,40 +23,58 @@
         }
 
         #canasta {
-            width: 50%;
+            width: 769px;
         }
 
         #balonBaloncesto {
-            width: 5%;
-            animation: tiro 5s linear 2s infinite;
+            width: 80px;
+            animation: tiro 10s linear 1s infinite;
         }
 
         @keyframes tiro {
 
-            30% {
+            10% {
                 transform: translate(-355px, -150px);
             }
 
-            60% {
+            20% {
                 transform: translate(-355px, 250px);
             }
 
-            70% {
-                transform: translate(-355px, 230px);
+            35% {
+                transform: translate(-355px, 100px);
             }
 
-            80% {
+            45% {
                 transform: translate(-355px, 250px);
 
             }
 
-            90% {
+            55% {
+                transform: translate(-355px, 150px);
+            }
+
+            65% {
+                transform: translate(-355px, 250px);
+
+            }
+
+            75% {
+                transform: translate(-355px, 200px);
+
+            }
+
+            85% {
+                transform: translate(-355px, 250px);
+            }
+
+            95% {
                 transform: translate(-355px, 230px);
+
             }
 
             100% {
                 transform: translate(-355px, 250px);
-
             }
         }
     </style>

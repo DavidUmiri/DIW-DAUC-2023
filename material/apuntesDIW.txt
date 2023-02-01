@@ -155,3 +155,18 @@ pelota.
 5. EJERCICIO 5 – CANASTA
 Repite el ejercicio anterior de la torre de pisa pero ahora será una canasta de baloncesto y una pelota de baloncesto.
 Otra diferencia es que la pelota al llegar abajo rebotará y volverá hasta arriba del todo y así indefinidamente.
+
+//
+6. EJERCICIO 6 - ESPACIO
+Crea una página web:
+• En el fondo se verá una foto del espacio y de la Estación Espacial Internacional (IIS).
+• Que sobre algún lado de la IIS coloques la imagen de un astronauta.
+• Que al pulsar un botón se active una animación que mueva el astronauta durante 1000px y al acabar se quede ahí.
+• Si se vuelve a pulsar el botón, repetirá la animación.
+• La duración de la animación será de 5s
+Debes probar con distintas animation-timing-function y elegir la que se parezca mas al movimiento rectilíneo
+uniforme que se tiene en el espacio.
+
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+
+transform: translateX(0px);/*Regresamos a su posicioón original*/

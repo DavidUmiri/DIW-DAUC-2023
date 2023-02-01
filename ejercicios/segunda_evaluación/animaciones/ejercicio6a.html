@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejercicio6.css">
+</head>
+
+<body>
+
+    <div>
+        <img id="idEspacio" src="espacio.webp" alt="">
+        <img id="idAstronauta" src="astronauta.png" alt="">
+    </div>
+
+    <style>
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #idEspacio {
+            width: 80%;
+        }
+
+        #idAstronauta {
+            position: absolute;
+            width: 250px;
+        }
+
+        #idAstronauta:hover {
+            animation: astronauta 5s linear 0s infinite;
+        }
+
+        @keyframes astronauta {
+
+            30% {
+                transform: translate(300px, 100px) scale(200%);
+            }
+
+            100% {
+                transform: translate(-300px, -200px) scale(50%);
+            }
+
+        }
+    </style>
+</body>
+
+</html>
