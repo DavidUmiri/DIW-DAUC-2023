@@ -1,4 +1,49 @@
 @charset "UTF-8";
+
+/* ANIMACIONES */
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+#idCajaBienvenida {
+  margin-top: 2%;
+  width: 100%;
+  background-color: #000;
+}
+
+.bienvenida {
+  position: relative;
+  font-size: 5vmax;
+  font-family: "Finger Paint";
+
+  /* animation: name duration timing-function delay iteration-count direction */
+  animation: bienvenidos 3s linear 0s infinite alternate;
+}
+
+@keyframes bienvenidos {
+  0% {
+    /* transform: rotate(45deg) scale(3) translate(100px, 50px); */
+    color: magenta;
+  }
+
+  25% {
+    color: cyan;
+  }
+
+  50% {
+    color: chartreuse;
+
+  }
+
+  75% {
+    color: deeppink;
+  }
+
+  100% {
+    color: springgreen;
+    margin-left: 66%;
+  }
+}
+
+/*  */
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 [class*=col-] {

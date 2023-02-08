@@ -1,6 +1,21 @@
 /* Modificado */
 
+#idCajaGifs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
 
+img {
+    width: 5%;
+    padding: 5%;
+}
+
+img:hover {
+    width: 10%;
+}
 
 /* Plantilla */
 
