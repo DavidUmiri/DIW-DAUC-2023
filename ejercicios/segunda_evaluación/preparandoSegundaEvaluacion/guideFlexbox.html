@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guideFlexbox.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> A Complete Guide to Flexbox </h1>
+    <table border="1">
+        <!-- th: cabecera, tr: fila, td, columna -->
+        <th>Properties for the Parent (flex container)</th>
+        <th>Properties for the Children (flex items)</th>
+        <tr>
+            <td>display: flex; /* or inline-flex */</td>
+            <td>order: 5; /* default is 0 */</td>
+        </tr>
+        <tr>
+            <td>flex-direction: row | row-reverse | column | column-reverse;</td>
+            <td>flex-grow: 4; /* default 0 */</td>
+        </tr>
+        <tr>
+            <td>flex-wrap: nowrap | wrap | wrap-reverse;</td>
+            <td>flex-shrink: 3; /* default 1 */</td>
+        </tr>
+        <tr>
+            <!-- Esta es una abreviatura de las propiedades flex-direction y flex-wrap, que juntas definen los ejes principal y transversal del contenedor flexible.  El valor predeterminado es row nowrap -->
+            <td>flex-flow: column wrap; /* direction + wrap */</td>
+            <td>flex-basis: | auto; /* default auto */</td>
+        </tr>
+        <tr>
+            <td>justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start |
+                end | left | right ... + safe | unsafe;</td>
+            <!-- Esta es la abreviatura de flex-grow, flex-shrink y flex-basis combinados -->
+            <td> flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]</td>
+        </tr>
+        <tr>
+            <td>align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline |
+                start | end | self-start | self-end + ... safe | unsafe;</td>
+            <td>align-self: auto | flex-start | flex-end | center | baseline | stretch;</td>
+        </tr>
+        <tr>
+            <td>align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch |
+                start | end | baseline | first baseline | last baseline + ... safe | unsafe;</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gap: 10px 20px; /* row-gap column gap */</td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="contenedor">
+        <div class="hijo"></div>
+        <div class="hijo"></div>
+        <div class="hijo"></div>
+    </div>
+</body>
+
+</html>

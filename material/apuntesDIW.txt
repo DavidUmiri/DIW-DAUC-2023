@@ -253,4 +253,22 @@ contenedores -->
 CDN --> content delivery network 
 
 componente de Bootstrap -->
+	elemento HTML reutilizable que ya viene con un estilo predeterminado
 	
+// exámen viernes 17/02/2023 -->
+	video de flex
+	video de grid - texto, videos e imagenes responsivas (max-width), etc...
+	sass - cómo generar las columnas grid
+	animaciones
+	video de bootstrap - preguntas
+
+// extensiones -->
+	live server
+	error lens
+	intelli code
+	prettier code formater
+	auto close tag
+	auto rename tag
+	html css support
+	javascript (es6)
+	rainbow brackets

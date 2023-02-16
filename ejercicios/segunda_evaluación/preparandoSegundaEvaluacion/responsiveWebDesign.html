@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is The Viewport?</h1>
+    <p>meta name="viewport" content="width=device-width, initial-scale=1.0"</p>
+
+    <h1>What is a Grid-View?</h1>
+    <p>pagina dividida en columnas</p>
+    <p>normalmente tiene 12 columnas y tiene un ancho total del 100%</p>
+
+    <h1>box-sizing: border-box;</h1>
+    <p>
+        primero asegurarse de que todos los elementos HTML tengan la propiedad box-sizing: border-box, esto asegura que
+        el relleno y el borde estén incluidos en el ancho y alto total de los elementos
+    </p>
+
+    <h1>What is a Media Query?</h1>
+    <p>
+        @media only screen and (max-width: 600px) {
+        body {
+        background-color: lightblue;
+        }
+        }
+    </p>
+    <p>
+        Orientation: Portrait / Landscape
+        Orientación: Vertical / Horizontal
+        @media only screen and (orientation: landscape) {
+        Cuando el ancho del documento es mayor que el alto
+    </p>
+
+    <h1>Hide Elements With Media Queries</h1>
+    <p>display: none;</p>
+
+    <h1>Responsive Web Design - Images</h1>
+    <p>
+        img {
+        width: 100%;
+        height: auto;
+        }
+    </p>
+    <p>
+        mejor
+        img {
+        max-width: 100%;
+        height: auto;
+        }
+    </p>
+    <p>
+        picture
+        source srcset="img_smallflower.jpg" media="(max-width: 400px)"
+        source srcset="img_flowers.jpg"
+        img src="img_flowers.jpg" alt="Flowers"
+        picture
+    </p>
+
+    <h1>Responsive Web Design - Videos</h1>
+    <p>
+        video {
+        width: 100%;
+        height: auto;
+        }
+    </p>
+    <p>
+        en muchos casos usaremos
+        video {
+        max-width: 100%;
+        height: auto;
+        }
+    </p>
+</body>
+
+</html>
