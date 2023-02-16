@@ -212,3 +212,45 @@ transform: translateX(0px);/*Regresamos a su posicioón original*/
     height: 74px;
     line-height: 74px;
 }
+
+// Bootstrap
+
+framework css --> base o estructura que puedes usar para desarrollar tu sitio web
+clases --> nos permiten personalizar el estilo de los elementos HTML de nuestro sitio
+adaptable --> responsive --> una web que se adapta a distintos dispositivos en tamaño y orientación
+pilares Bootstrap --> grid, componentes e íconos
+grid --> cuadrícula --> 12 columnas
+clase para grid --> .row .col- .col-sm- .col-md- .col-lg- .col-xl-
+row --> fila
+col --> columna
+sm --> small
+md --> medium
+
+6 breakpoints --> 
+	xs < 576px
+	sm >= 576px
+	md >= 768px
+	lg >= 992px
+	xl >= 1200px
+	xxl >= 1400px
+
+estructura -->
+	div.container
+		div.row
+			div.col div.col
+		div.row
+			div.col div.col div.col
+
+contenedores -->
+	.container: ancho máximo fijo que depende del tamaño del dispositivo
+	.container-fluid: contenedor responsivo que cubre 100% del ancho de la ventana
+	.container-sm
+	.container-md
+	.container-lg: es un híbrido, menor al punto de ruptura utiliza container fluido y mayor al punto de ruptura usa un ancho máximo fijo
+	.container-xl
+	.container-xxl
+
+CDN --> content delivery network 
+
+componente de Bootstrap -->
+	
