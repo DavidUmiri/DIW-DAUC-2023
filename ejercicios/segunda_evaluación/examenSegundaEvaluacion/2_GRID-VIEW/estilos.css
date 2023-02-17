@@ -1,0 +1,103 @@
+/*************ESTILO BÁSICO (NO TOCAR)***************/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #d5afe9;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+/*******************************************************************************/
+/************************   ESCRIBE A PARTIR DE AQUÍ TU CÓDIGO   ***************/
+/*******************************************************************************/
+
+/*********
+  2.1 .- Reescribir utilizando la tecnología Sass(mediante un bucle), la definición en 6 columnas.
+*****/
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+col-1 {
+  width: 16.6666666667%;
+}
+
+col-2 {
+  width: 33.3333333333%;
+}
+
+col-3 {
+  width: 50%;
+}
+
+col-4 {
+  width: 66.6666666667%;
+}
+
+col-5 {
+  width: 83.3333333333%;
+}
+
+col-6 {
+  width: 100%;
+}
+
+/*********
+
+ 2.2 .- Utilizando la tecnología art-director, crear una "picture" cuya url de la imagen vaya cambiado en función del tamaño de la web
+
+*******/
+#peque {
+  max-width: 100%;
+  height: auto;
+}
+
+#med {
+  display: none;
+}
+
+#gran {
+  display: none;
+}
+
+/**********************
+2.3 .- Establecer que el texto central de la web sea responsivo. Utilizando unidades de tamaño relacionadas con el viewport( el 1% del tamaño horizontal).
+- El texto central está ubicado en un párrafo con la clase : "texto-central"
+*******************/
+
+/*******************************
+2.4 .- Isertar vídeo Responsivo:
+***************/
+#video {
+  max-width: 100%;
+  height: auto;
+}

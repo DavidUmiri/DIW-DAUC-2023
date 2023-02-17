@@ -1,0 +1,33 @@
+//$base: (100% / 6);
+$base: calc(100% / 6);
+
+@media screen and (max-width: 600px) {
+
+    @for $i from 1 through 6 {
+        col-t-#{$i} {
+        width: ($base * $i );
+        }
+    }
+}
+
+$base: calc(100% / 4);
+
+@media screen and (min-width: 600px) {
+
+    @for $i from 1 through 4 {
+        col-m-#{$i} {
+        width: ($base * $i );
+        }
+    }
+}
+
+$base: calc(100% / 12);
+
+@media screen and (min-width: 900) {
+
+    @for $i from 1 through 12 {
+        col-e-#{$i} {
+        width: ($base * $i );
+        }
+    }
+}

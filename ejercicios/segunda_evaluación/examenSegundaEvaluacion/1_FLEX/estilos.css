@@ -1,0 +1,225 @@
+/*************ESTILO BÁSICO (NO TOCAR)***************/
+
+header,
+#contenedor1 div,
+#contenedor2 div,
+footer {
+  padding: 1rem;
+}
+
+header {
+  background: tomato;
+  text-align: center;
+}
+
+nav {
+  background: gray;
+}
+
+p {
+  text-align: justify;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-flow: column;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+}
+
+li a:hover {
+  background-color: burlywood;
+}
+
+#contenedor3 {
+  background-color: blanchedalmond;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 2em;
+}
+
+#contenedor3 > div {
+  border: 1px solid black;
+  height: 100px;
+  width: 25%;
+  border-radius: 8px;
+}
+/****************************
+      COLORES
+*****************************/
+
+#andorra,
+#madrid {
+  background: deepskyblue;
+}
+
+#italia,
+#andalucia {
+  background: gold;
+}
+
+#austria,
+#galicia {
+  background: hotpink;
+}
+
+#suecia {
+  background: rgb(12, 231, 129);
+}
+
+#portugal {
+  background: rgb(34, 16, 192);
+}
+
+#alemania {
+  background: rgb(206, 87, 9);
+}
+
+footer {
+  background: lightgreen;
+  text-align: center;
+}
+
+/******ESCRIBE A PARTIR DE AQUÍ TU CÓDIGO************/
+
+/* Los puntos de ruptura se producen a los 600px y 800px */
+
+* {
+  box-sizing: border-box;
+}
+
+#contenedor3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #contenedor1 {
+    display: flex;
+  }
+  #andorra {
+    order: 0;
+    flex-grow: 1;
+  }
+  #italia {
+    order: 1;
+    flex-grow: 0;
+  }
+
+  #austria {
+    order: 2;
+    flex-grow: 0;
+  }
+
+  #contenedor2 {
+    display: flex;
+  }
+  #suecia {
+    order: 0;
+    flex-grow: 0;
+  }
+  #portugal {
+    order: 1;
+    flex-grow: 0;
+  }
+  #alemania {
+    order: 2;
+    flex-grow: 1;
+  }
+  #contenedor3 {
+    display: flex;
+    flex-flow: column;
+  }
+  #madrid {
+    align-self: flex-end;
+  }
+  #andalucia {
+  }
+  #galicia {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #contenedor1 {
+    display: flex;
+  }
+  #italia {
+    order: 0;
+    flex-grow: 3;
+  }
+  #austria {
+    order: 1;
+    flex-grow: 0;
+    text-align: center;
+  }
+  #andorra {
+    order: 2;
+    flex-grow: 1;
+  }
+
+  #contenedor2 {
+    display: flex;
+  }
+  #suecia {
+    order: 1;
+    flex-grow: 10;
+  }
+  #portugal {
+    order: 2;
+    flex-grow: 0;
+  }
+  #alemania {
+    order: 0;
+    flex-grow: 2;
+  }
+
+  #contenedor3 {
+    display: flex;
+    flex-flow: column;
+  }
+  #madrid{
+  align-self: flex-start;
+  }
+  #andalucia {
+
+  }
+  #galicia{
+    align-self: flex-start;
+  }
+}
