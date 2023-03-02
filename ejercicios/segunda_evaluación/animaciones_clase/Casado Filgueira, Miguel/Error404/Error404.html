@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Error404.css">
+    <link href="https://fontmeme.com/fonts/perfect-dos-vga-437-font/" rel="stylesheet">
+    <title>Error 404</title>
+</head>
+<body>
+    <div class="notfound">
+        <div class="centered tit" >404</span></div>
+        <br>
+        <div class="row">Ha ocurrido un error al intentar mostrar la página.</div>
+        <div class="row">Probablemente haya sido Javito quien haya tirado del cable y desconectado el servidor...</div>
+        <br>
+        <br>
+        <div class="centered" onclick="mostrar()">Pulsa aquí para volver...<span class="blink">&#9608;</span></div>
+        <div class="centered" id="oculto">(No hace nada)</div>
+    </div><br>
+    <div id="contenedor">
+        <div id="barra">
+          <div id="texto"></div>
+        </div>
+      </div>
+</body>
+
+<script>
+    function mostrar(){
+        document.getElementById("oculto").classList.add("mostrar");
+        document.getElementById("oculto").id = "";
+    }
+</script>
+</html>

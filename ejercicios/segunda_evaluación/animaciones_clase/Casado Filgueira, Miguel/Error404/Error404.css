@@ -1,0 +1,139 @@
+
+
+*, :after, :before, html {
+    box-sizing: border-box;
+    font-family: 'more_perfect_dos_vgaregular', 'Courier New', monospace;
+}
+
+body {
+    margin: 10px;
+    background-color: #000084;
+    color: #bbb;
+    
+    font-size: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+.notfound {
+    width: 70ch;
+    height: 25ch;
+    background-color: #000084;
+}
+
+.row {
+    text-align: left;
+}
+
+.centered {
+    text-align: center;
+}
+
+.inverted {
+    background-color: #bbb;
+    color: #000084;
+}
+
+.shadow {
+    background-color: #000;
+    color: #000084;
+}
+
+.blink {
+    animation: blinkingText .8s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        opacity: 0;
+    }
+    
+    49% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+}
+.mostrar{
+    visibility: visible;
+}
+#oculto{
+    visibility: hidden;
+}
+.tit{
+    font-size: 4em;
+}
+
+#contenedor {
+    width: 25em;
+    height: 4em;
+    border: 2px solid #bbb;
+}
+
+#barra {
+
+    height: 100%;
+    animation: progreso 5s linear infinite;
+    background: #bbb;
+}
+
+#texto {
+    position: relative;
+    top: 20%;
+    font-size: 2em;
+    width: 12.5em;
+    height: 100%;
+    text-align: center;
+    color: grey;
+}
+
+#texto:after {
+    content: '0%';
+    animation: porcentaje 5s linear infinite;
+}
+
+
+@keyframes progreso {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes porcentaje {
+    0% {
+        content: '0%';
+    }
+    25% {
+        content: '25%';
+    }
+    50% {
+        content: '50%';
+    }
+    75% {
+        content: '75%';
+    }
+    100% {
+        content: 'ERROR';
+    }
+}

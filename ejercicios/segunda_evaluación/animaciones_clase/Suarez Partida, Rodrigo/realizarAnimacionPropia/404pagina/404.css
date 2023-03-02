@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Hack;
+}
+
+html, body{
+    background-color: red;
+    height: 100%;
+}
+p{
+    color: silver;
+    font-size: 50px;
+    padding: 2%;
+    font-weight: bold;
+}
+
+#porteriaDiv{
+    position: relative;
+    margin: 5%;
+}
+
+
+
+#porteria{
+    width: 100%;
+}
+
+#porteroDePie{
+    left: 30%;
+    bottom: 0%;
+    position: absolute;
+    width: 40%;
+}
+
+#porteroTirandose{
+    visibility: hidden;
+    left: 30%;
+    bottom: 0%;
+    position: absolute;
+    width: 40%;
+}
+
+#pelota{
+    margin: 5%;
+    width: 7.5%;
+    animation-name: lanzamiento;
+    /*animation-iteration-count: infinite;*/
+    animation-duration: 2s;
+    /*animation-delay: 2s;*/
+}
+
+@keyframes lanzamiento{
+    from{
+        transform: translate(0px, 0px);
+    }
+    to{
+        transform: translate(185%, -700%);
+    }
+}

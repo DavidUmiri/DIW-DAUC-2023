@@ -1,0 +1,79 @@
+:root {
+    --width:250px;
+    --height:calc(var(--width) / 2);
+  }
+  
+  body {
+    background-color: grey;
+    background-image: url('../img/tele.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 53%;
+    background-size: 150vh;
+
+  }
+  
+  .ball {
+    text-align: center;
+    font-size: 7em;
+    width: var(--width);
+    height: var(--height);
+    color: aliceblue;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    z-index: 100;
+    animation: toRight linear 6.8s infinite alternate, bounce linear 17s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      top:1%;
+      color: yellow;
+    }
+    48% {
+      color: blue;
+    }
+    50% {
+      top: calc(100% - var(--height) - 35%);
+      color: red;
+    }
+    52% {
+      color: purple;
+    }
+    100% {
+      top: 1%;
+      color: pink;
+    }
+  }
+  
+  @keyframes toRight {
+  
+    0% {
+      left: 15%;
+    }
+  
+    100% {
+      left: calc(100% - var(--width) - 14%);
+    }
+  }
+
+  .meme{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    width: 70.2%;
+    height: 80%;
+    color: aliceblue;
+    background-color: black;
+    margin-left: 14.7%;
+    margin-top: 1.5%;
+  }
+  .meme p{
+    font-size: 2em;
+  }
+
+  .meme img{
+    width: 50%;
+  }

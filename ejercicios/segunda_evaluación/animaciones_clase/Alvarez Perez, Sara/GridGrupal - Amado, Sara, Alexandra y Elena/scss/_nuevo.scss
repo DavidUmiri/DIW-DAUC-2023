@@ -1,0 +1,195 @@
+.contenedor {
+  margin: 20px auto;
+  max-width: 100%;
+  width: 70%;
+  background-color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr td {
+  border-bottom: 1px solid #555555;
+  padding: 10px;
+}
+
+thead th {
+  padding: 10px;
+}
+
+.pictures {
+  padding-left: 17%;
+  display: flex;
+}
+
+picture {
+  display: inline;
+}
+
+.img {
+  width: 40px;
+}
+
+.jyn {
+  max-width: 100%;
+}
+
+.orson {
+  max-width: 50%;
+}
+
+.video-responsive {
+  width: 50%;
+  float: left;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  padding-bottom: 100px;
+}
+
+.section {
+  width: 30%;
+}
+
+/*MOVIL*/
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .pictures {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 15%;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jyn {
+    max-width: 50%;
+    margin-bottom: 30%;
+  }
+  .orson{
+    margin-top: 10%;
+  }
+
+}
+
+/*TABLET*/
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+  h1 {
+    font-size: 2vw;
+  }
+
+  .video-responsive {
+    width: 90%;
+    float: left;
+  }
+
+  .pictures {
+    padding-left: 10%;
+    display: block;
+  }
+
+  .pictures picture:nth-child(1) {
+    order: 1;
+    margin-left: 13%;
+  }
+
+  .pictures div:nth-child(2) {
+    order: 3;
+    margin-bottom: 1%;
+  }
+
+  .pictures picture:nth-child(3) {
+    order: 2;
+  }
+
+  .orson {
+    max-width: 30%;
+  }
+
+}
+
+/*ESCRITORIO*/
+@media only screen and (min-width: 901px) {
+  html {
+    font-size: 1vw;
+  }
+
+  h1 {
+    font-size: 2vw;
+  }
+}
+
+/* ESTILOS PARA OCULTAR CIERTAS COLUMNAS */
+table.hidden thead {
+  background-color: #555555;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+
+  .hidden td.primero,
+  .hidden th.primero {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .hidden td.segundo,
+  .hidden th.segundo {
+    display: none;
+  }
+}
+
+/* ESTILOS PARA EL SCROLL CONTROLADO */
+div.scroll table {
+  margin-top: 50px;
+}
+
+div.scroll table thead {
+  background-color: #555555;
+  color: yellow;
+}
+
+div.scroll {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Start: Video Responsive */
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 400px;
+  /* Adecua este valor para controlar la altura del video */
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* End: Video Responsive */

@@ -1,0 +1,294 @@
+.mensaje{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items:center ;
+}
+
+h1{
+    font-size: 15rem;
+}
+
+
+/*He quitado el contenedor*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+#titulo {
+  text-transform: uppercase;
+	background-image: linear-gradient(to right top, #898921, #b59837, #ac6527, #a02c26, #982050);
+   background-size: 50% auto;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vw;
+  position: absolute;
+  top: 0;
+  animation: gradientAnim 7.5s ease  alternate infinite;
+}
+
+
+@keyframes gradientAnim {
+  to {
+    background-position: 100% top;
+  }
+}
+
+
+
+
+
+/*CUBO 3D*/
+
+#cont-cubo {
+    margin:100px auto;
+    -webkit-perspective:600px;
+    -moz-perspective:600px;
+    -webkit-animation:cont-cubo 10s infinite linear;
+    -moz-animation:cont-cubo 10s infinite linear;
+     }
+    
+    .cubo {
+    position: relative;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    -webkit-animation:giro 25s infinite linear;
+    -moz-animation:giro 25s infinite linear;
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    }
+    
+    .cubo div {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    -moz-cubo-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5); /* Firefox anti aliasing */
+    -webkit-animation:rotate 15s infinite linear;
+    -moz-animation:rotate 15s infinite linear;
+    }
+    .cubo div img {width:200px; height:200px;
+    border-radius:200px;
+    -webkit-animation:rot 5s infinite linear;
+    -moz-animation:rot 5s infinite linear;
+    }
+    .cubo div.cara1 {
+    background:rgba(0,102,153,.5);
+    -webkit-transform:translateZ(100px);
+    -moz-transform:translateZ(100px);
+    }
+    .cubo div.cara2 {
+    background:rgba(150,153,0,.5);
+    -webkit-transform:rotateY(90deg) translateZ(100px);
+    -moz-transform:rotateY(90deg) translateZ(100px);
+    }
+    .cubo div.cara3 {
+    background:rgba(39,116,61,.5);
+    -webkit-transform:rotateY(180deg) translateZ(100px);
+    -moz-transform:rotateY(180deg) translateZ(100px);
+    }
+    .cubo div.cara4 {
+    background:rgba(105,136,165,.5);
+    -webkit-transform:rotateY(-90deg) translateZ(100px);
+    -moz-transform:rotateY(-90deg) translateZ(100px);
+    }
+    .cubo div.cara5 {
+    background:rgba(223,48,48,.5);
+    -webkit-transform:rotateX(-90deg) translateZ(100px) rotate(180deg);
+     -moz-transform:rotateX(-90deg) translateZ(100px) rotate(180deg);
+    }
+    .cubo div.cara6  {
+    background:rgba(144,153,102,.5);
+    -webkit-transform:rotateX(90deg) translateZ(100px);
+    -moz-transform:rotateX(90deg) translateZ(100px);
+    }
+    
+    @-moz-keyframes giro {
+    0% {-moz-transform: rotateX(0deg) rotateY(0deg);}
+    100% {-moz-transform: rotateX(1080deg) rotateY(360deg);}
+    }
+    @-webkit-keyframes giro {
+    0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+    100% {-webkit-transform: rotateX(1080deg) rotateY(360deg);}
+    }
+    @-moz-keyframes rot {
+    0% {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);}
+    }
+    @-webkit-keyframes rot {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+    }
+
+
+
+
+
+/*CIRCULO MULTICOLOR*/
+
+/*He cambiado la imagen, el background del body y he creado .liga que contiene la animación y el h2 para centrarlo*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        --bg-color: radial-gradient(#003, #000);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(251, 241, 241);
+
+    }
+    .liga{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .box {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        background-image: url('img/pelotaLiga.png');
+        background-repeat: no-repeat;
+        background-size: 180px;
+        background-position: center;
+        mix-blend-mode: multiply;
+    }
+    
+    .box span {
+        position: absolute;
+        width: 10px;
+        height: 250px;
+        background: transparent;
+        border-bottom: 40px solid transparent;
+        transform-origin: bottom;
+        transform: rotate(calc(22.5deg * var(--i)));
+    }
+    
+    .box span::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background: #0af;
+        box-shadow: 0 0 20px #0af;
+        border-radius: 10px;
+        animation: animate 1.5s linear infinite;
+        animation-delay: calc(0.1s * var(--i));
+    }
+    
+    @keyframes animate {
+        0% {
+            transform: translateY(160px) rotate(-45deg);
+            filter: hue-rotate(0deg);
+        }
+    
+        50% {
+            transform: translateY(90px);
+        }
+    
+        100% {
+            transform: translateY(160px) rotate(45deg);
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+
+
+    /*CARTA*/
+
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    /*HE QUITADO EL HEIGHT 100VH Y EL WIDTH LO HE CAMBIADO A 20%*/
+    .container{
+        padding: 0px;
+        margin: 0px;
+        width: 20%;
+        background-color: #002333;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+        max-width: 1112px; 
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        background-color: #B4BEC9;
+        background-image: url('img/noticia.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        min-height: 450px;
+        margin: 1rem;
+        border-radius:  15px;
+        max-width: 350px; 
+        width: 100%;
+    }
+    
+    .card-body{
+        background: rgba(0, 0, 0, .8);
+        width: 100%;
+        box-sizing: border-box;
+        bottom: 0;
+        position: absolute;
+        height: 30px;
+        transition: 1s;
+    }
+    
+    .card-body::before{
+        content: ' Ver más...';
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 30%;
+        height: 30px;
+        padding: 0 0 0 8px;
+        transition: 1s;
+        border-radius: 0 0 15px 0;
+        background-color: #159A9C;
+    }
+    
+    .card:hover .card-body{
+        height: 60%;
+    }
+    .card-content{
+        padding: 2rem;
+    }
+    
+    .card:hover .card-body::before{
+        width: 80%;
+    }
+    
+    button{
+        background: #B4BEC9;
+        color: #002333;
+        border: 0px;
+        border-radius: 6px;
+        padding: .5rem 1rem;
+    }
+    
+    h2{
+        text-decoration: underline #159A9C 20%; 
+    }
+
+    #parrafo{
+        position: absolute;
+        bottom: 10%;
+        font-weight: bold;
+    }

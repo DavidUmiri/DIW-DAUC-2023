@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+[class*=col-] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Para móviles: 4 columnas 2 peliculas por fila */
+@media only screen and (max-width: 600px) {
+  $base: 25%;
+
+  @for $i from 1 through 4 {
+    .col-#{$i} {
+      width: ($base*$i);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Para móvil eliminamos del footer todo menos las redes sociales */
+  .ft-main-item,section.ft-main {
+    display: none;
+  }
+
+  p {
+    font-size: 3.5vw;
+  }
+  .hscroll{
+    margin-left: 12.5%;
+  }
+}
+
+/* Para tablets: 8 columnas 4 peliculas por fila */
+@media only screen and (min-width: 600px) {
+  $base: 12.5%;
+
+  @for $i from 1 through 8 {
+    .col-t-#{$i} {
+      width: ($base*$i);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  p {
+    font-size: 2.5vw;
+  }
+
+}
+
+/* Para escritorio: 12 columnas 6 peliculas por fila */
+@media only screen and (min-width: 900px) {
+  $base: 8.333333333333%;
+
+  @for $i from 1 through 12 {
+    .col-e-#{$i} {
+      width: ($base*$i);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+}
+
+.peliculas div {
+  height: 40vh;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.categorias {
+  text-align: center;
+  h1{
+    padding: 0.5%;
+  }
+}
+
+.informacion h1,
+p {
+  margin: 1% 16%;
+  text-align: center;
+}
+
+video {
+  max-width: 100%;
+}
+
+/* Asignamos el scroll a la tabla */
+.hscroll {
+  overflow-x: auto;
+  text-align: center;
+}
+
+img:hover {
+  transition: 0.1s;
+  border: 1vh solid rgb(58, 0, 183);
+  cursor: pointer;
+}
+
+/* Creamos el degradado de la tabla */
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  background-image: linear-gradient( 183.5deg, rgba(229,251,31,1) 29.9% , rgba(244,173,6,1) 78.6%);
+  color: #fff;
+  border-radius: 0.4vw;
+}
+
+td, th {
+  background: rgb(243, 243, 215);
+  color: #000;
+  border-radius: .3vw;
+}
+
+/*******************************************************************/
+
+/* NAV */
+
+nav {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  height: 14vh;
+  a{
+    padding: 2%;
+  }
+}
+
+/* Clase para dar color a los navs */
+#nav-3 {
+  background: #EEA200;
+}
+
+/* Realizamos la animación al pasar por encima */
+.link-3 {
+  transition: 0.5s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  &:hover{
+    background-color: #ffffff;
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/*******************************************************************/
+
+/* FOOTER */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer {
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+  a{
+    text-decoration: none;
+    color: #eee;
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ft-title {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+.container {
+  flex: 1;
+}
+
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+
+input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+  li{
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+  }
+  li:nth-last-child(2) {
+    flex: 1;
+  }
+}
+
+/*# sourceMappingURL=intro.css.map */

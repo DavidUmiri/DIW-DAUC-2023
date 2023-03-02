@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
+    <title>Web Grid Grupal</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="img/fondo.jpg" id="fondo" />
+    </header>
+    <div class="pictures">
+      <!-- FOTO RESPONSIVA -->
+      <picture>
+        <!-- Pantalla -->
+        <source class="jyn" media="(min-width: 900px)" srcset="img/fotop.jpg" />
+        <!-- Tablet -->
+        <source class="jyn" media="(min-width: 601px)" srcset="img/fotot.jpg" />
+        <!-- Movil -->
+        <img class="jyn" src="img/fotom.jpg" />
+      </picture>
+      <!-- VIDEO RESPONSIVO -->
+      <div class="video-responsive">
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/tGsKzZtRwxw" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+
+      </div>
+      <!-- FOTO RESPONSIVA -->
+      <picture>
+        <!-- Pantalla -->
+        <source
+          class="orson"
+          media="(min-width: 900px)"
+          srcset="img/fotovp.jpg"
+        />
+        <!-- Tablet -->
+        <source
+          class="orson"
+          media="(min-width: 601px)"
+          srcset="img/fotovt.jpg"
+        />
+        <!-- Movil -->
+        <img class="orson" src="img/fotovm.jpg" />
+      </picture>
+    </div>
+    <!-- TABLA RESPONSIVA -->
+    <div class="contenedor">
+      <table class="hidden">
+        <thead>
+          <tr>
+            <th>Personajes</th>
+            <th>Jyn Erso</th>
+            <th>Nacimiento</th>
+            <th>Muerte</th>
+            <th class="primero segundo">Orson Krennic</th>
+            <th class="primero segundo">Nacimiento</th>
+            <th class="primero segundo">Muerte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Descripción</td>
+            <td><img class="img" src="img/jyn.jpg" /></td>
+            <td>21 ABY, Vallt</td>
+            <td>0 ABY, Scarif</td>
+            <td class="primero segundo">
+              <img class="img" src="img/orson.jpg" />
+            </td>
+            <td class="primero segundo">51 ABY</td>
+            <td class="primero segundo">0 ABY, Scarif</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Personajes</th>
+              <th>Jyn Erso</th>
+              <th>Nacimiento</th>
+              <th>Muerte</th>
+              <th>Orson Krennic</th>
+              <th>Nacimiento</th>
+              <th>Muerte</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Descripción</td>
+              <td><img class="img" src="img/jyn.jpg" /></td>
+              <td>21 ABY, Vallt</td>
+              <td>0 ABY, Scarif</td>
+              <td><img class="img" src="img/orson.jpg" /></td>
+              <td>51 ABY</td>
+              <td>0 ABY, Scarif</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TEXTO RESPONSIVO -->
+    <div>
+      <main>
+        <section class="section">
+          <h1>JYN ERSO</h1>
+          <p>
+            Jyn Erso fue una mujer humana, soldado y ex criminal que se
+            convirtió en un miembro fundamental de la Alianza para Restaurar la
+            República cuando lideró a Rogue One en el robo de los planos de la
+            Estrella de la Muerte durante la Batalla de Scarif. Era hija de Lyra
+            Erso, una devota miembro de la Iglesia de la Fuerza, y del
+            científico Galen Erso, que se vio obligado a ayudar al Imperio
+            Galáctico a construir la Estrella de la Muerte. La madre de Erso fue
+            asesinada cuando el Director Orson Krennic, el comandante del
+            proyecto de la Estrella de la Muerte, secuestró a su padre, quien se
+            refería cariñosamente a su hija como «Estrella». Fue criada por el
+            luchador de la resistencia Saw Gerrera y se convirtió en un niña
+            soldado en su ejército.
+          </p>
+        </section>
+        <section class="section">
+          <h1>ORSON KRENNIC</h1>
+          <p>
+            Orson Callan Krennic era un humano que sirvió a la República
+            Galáctica con el rango de Teniente Comandante. Una vez constituido
+            el Imperio Galáctico, Krennic fue ascendido a Comandante;
+            posteriormente, fue designado Director de la división de
+            Investigación de Armas Avanzadas en las Fuerzas Armadas Imperiales,
+            ya durante la Guerra Civil Galáctica. Era responsable de la
+            seguridad del proyecto Estrella de la Muerte, y dirigía un escuadrón
+            de soldados de la muerte, su arma personal contra la Alianza
+            Rebelde.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <!---------------------------- Footer Principal -------------------->
+    <footer>
+      <section class="ft-main">
+        <div class="sobre">
+          <div class="ft-main-item">
+            <h3 class="ft-title">Sobre</h3>
+            <ul>
+              <li><a href="#">Yoda</a></li>
+              <li><a href="#">Leia</a></li>
+              <li><a href="#">Han Solo</a></li>
+              <li><a href="#">R2-D2</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="recursos">
+          <div class="ft-main-item">
+            <h3 class="ft-title">Recursos</h3>
+            <ul>
+              <li style="text-decoration: underline;"><a href="pagina.html">Página</a></li>
+              <li style="text-decoration: underline;"><a href="index.html">Index</a></li>
+              <li><a href="#">Libros</a></li>
+              <li><a href="#">Teorías</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="recursos">
+          <div class="ft-main-item">
+            <h3 class="ft-title">Contacto</h3>
+            <ul>
+              <li><a href="#">Ayuda</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Dirección</a></li>
+            </ul>
+          </div>
+        </div>
+        <!---------------------------- Footer Redes Sociales -------------------->
+
+        <div class="ft-main-item">
+          <h3 class="ft-title">Manténgase actualizado</h3>
+          <p>
+            Subscríbete a nuestro boletín para recibir nuestras últimas
+            noticias.
+          </p>
+          <form>
+            <input
+              type="email"
+              name="email"
+              placeholder="Introduzca el correo"
+            />
+            <input type="submit" value="Subscribirse" />
+          </form>
+        </div>
+        <ul class="ft-social-list">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------------- Footer Derechos autor -------------------->
+      <section class="ft-legal">
+        <ul class="ft-legal-list">
+          <li><a href="#">Amado &amp; Sara &amp; Elena &amp; Alexandra</a></li>
+          <li>&copy; 2023 IES Francisco de Goya</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

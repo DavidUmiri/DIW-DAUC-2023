@@ -1,0 +1,84 @@
+
+
+body{
+    margin: 0%;
+}
+
+.fondoEstrellas{
+    background-image: url(fondoEstrellado.jpg);
+    height: 800px;
+    
+}
+
+.halconMilenario img{
+    width: 0%;
+    animation: nave 6s alternate 1s;
+    animation-timing-function: cubic-bezier(0,0.15,1);
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes nave{
+
+from{
+        width: 0%;
+    }
+
+    to{
+        width: 50%;
+        margin-top:6%;
+        transform: rotate(10deg) rotateY(50deg) translate(600px);
+    
+}
+}
+
+.letra1{
+font-size: 500px;
+color:yellow;
+text-shadow: 1px 5px 8px rgb(247, 247, 124);
+position: absolute;
+left: 20%;
+font-family:"Rubik Mono One", sans-serif;
+/* background-color: pink ; */
+}
+
+.letra2{
+    font-size: 500px;
+    color:yellow;
+    text-shadow: 1px 5px 8px rgb(247, 247, 124);
+    position: absolute;
+    left: 60%;
+    font-family: "Rubik Mono One", sans-serif;
+    /* background-color: pink ; */
+    }
+
+.error p{
+    color: rgb(240, 240, 4);
+    position: absolute;
+    left: 27%;
+    top: 80%;
+    font-size: 20px;
+    font-weight: bolder;
+    animation: error 3s alternate;
+    animation-fill-mode: forwards;
+
+
+}
+
+
+@keyframes error {
+
+    0%{
+        font-size: 0px;
+    }
+
+
+    100%{
+        font-size: 20px;
+        font-weight: bolder;
+        /* text-shadow: 1px 5px 10px rgb(247, 247, 124); */
+    }
+
+
+
+}

@@ -1,0 +1,9 @@
+#He incluido la pagina como parte del proyecto inicial
+
+#Se puede abrir desde su html o pinchando en el enlace que he metido en el menu principal
+
+#Tanto html como css y js (de la pagina de error) incluyen breves comentarios aclaratorios
+
+#La animación está incluida en el html del proyecto inicial (index.html)
+
+#Recordar que el tamaño de escritorio no fue rematado por su resposable

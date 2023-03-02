@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/error.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <title>Error 404</title>
+  </head>
+
+  <body>
+
+    <div class="classGrande">
+      <header>
+        <img src="img/galaxia.jpeg" id="Fondo de galaxia de Star Wars" />
+      </header> 
+
+      <div class="classNaveADch">
+        <img src="img/nave.png" alt="Foto nave Star Wars">
+      </div>
+
+      <div class="classNaveCDch">
+        <img src="img/nave2.png" alt="Foto nave Star Wars">
+      </div>
+
+      <div class="classNaveAbDch">
+        <img src="img/nave3.png" alt="Foto nave Star Wars">
+      </div>
+
+      <div class="classNaveAIz">
+        <img src="img/nave4.png" alt="Foto nave Star Wars">
+      </div>
+
+      <div class="classNaveAbIz">
+        <img src="img/nave5.png" alt="Foto nave Star Wars">
+      </div>
+
+      <div class="classError">
+        <img src="img/logo bien amarillo sin fondo.png" alt="Logo Error 404">
+      </div>
+  
+      <div class="classTexto">
+        <p>Oh oh!! Te has pasado al lado oscuro, ¿es que quieres formar parte del bando de Darth Vader?</p>
+      </div>
+
+      <div class="classGif">
+        <img src="img/error.gif" alt="Gif RS-D2 cayendose">
+      </div>
+
+      <div class="classConfirm">
+        <button onclick="boton()">¿Te arrepientes de irte al lado oscuro?</button>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+  function boton(){
+    const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+  })
+  
+  swalWithBootstrapButtons.fire({
+    title: '¿Estás seguro?',
+    text: "Esta acción te marcará para el resto de tu vida.",
+    showCancelButton: true,
+    confirmButtonText: 'Si, yo soy de los buenos',
+    cancelButtonText: 'No, aquí estoy bien',
+    imageUrl: 'img/solo.gif',
+    imageAlt: 'Gif de Han Solo alucinando',
+    imageWidth: 350,
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      swalWithBootstrapButtons.fire({
+        title: 'Genial!!',
+        text: 'Uf, menos mal, ya creíamos que te habíamos perdido.',
+        imageUrl: 'img/baby.gif',
+        footer: '<a href="index.html">OK</a>',
+        showConfirmButton: false
+    })
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      swalWithBootstrapButtons.fire({
+        title: 'Vale :(',
+        text: 'Bienvenid@ hij@, yo soy tu padre.',
+        imageUrl: 'img/vader.gif'
+    })
+    }
+  })
+  }
+  </script>
+

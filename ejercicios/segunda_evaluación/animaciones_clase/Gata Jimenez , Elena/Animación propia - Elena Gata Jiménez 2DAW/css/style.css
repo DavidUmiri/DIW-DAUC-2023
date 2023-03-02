@@ -1,0 +1,651 @@
+@charset "UTF-8";
+/* ------------------- Estilos Generales ---------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;700&family=Rubik+Mono+One&display=swap");
+* {
+  box-sizing: border-box;
+  color: #ffdd55;
+  text-align: justify;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  z-index: -10;
+}
+
+#fondo {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Expletus Sans", sans-serif;
+  background-color: black;
+  color: #ffdd55;
+  margin: 0;
+}
+
+::selection {
+  background-color: #ffdd55;
+  color: black;
+}
+
+::-moz-selection {
+  background-color: #ffdd55;
+  color: black;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-] {
+  float: left;
+  padding: 15px;
+}
+
+h1 {
+  margin: 80px 0;
+  font-size: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Rubik Mono One", sans-serif;
+  transform: rotateX(6deg);
+}
+
+h2 {
+  width: 75%;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 10%;
+  border: 2px solid #ffdd55;
+  border-radius: 5px;
+  color: #ffdd55;
+  padding: 10px 20px;
+  transform: rotate3d(1, 0, 0, 12deg) translateY(-20px);
+  transition: all 0.7s ease-in-out;
+  cursor: default;
+  letter-spacing: -2px;
+}
+h2:hover {
+  transform: scale(1.2) rotate3d(1, 0, 0, 2deg) translateY(-20px);
+  color: white;
+}
+
+h3 {
+  font-size: 3rem;
+  text-align: center;
+  border: 2px solid #ffdd55;
+  border-radius: 5px;
+  color: #ffdd55;
+  padding: 10px 20px;
+  transform: rotate3d(1, 0, 0, 12deg) translateY(-20px);
+  transition: all 0.7s ease-in-out;
+  cursor: default;
+}
+
+small {
+  margin-top: 20px;
+  color: gray;
+  display: block;
+}
+
+button {
+  color: #ffdd55;
+  background-color: black;
+  border: 2px solid #ffdd55;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Expletus Sans", cursive;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+.container {
+  width: 550px;
+  margin: auto;
+  align-items: center;
+  perspective: 150px;
+}
+
+.row {
+  z-index: 100;
+  background-color: black;
+}
+.row p {
+  margin: 5%;
+}
+
+.secondary-info {
+  width: inherit;
+  margin-bottom: 30px;
+  border-width: 0 0 0 1px;
+  border-color: #ffdd55;
+  border-style: solid;
+  padding: 0 0 0 10px;
+  margin: 50px 85px;
+}
+
+footer {
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer li {
+  list-style: none;
+}
+
+.ft-title {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+.imgYoda {
+  margin-top: 10%;
+}
+
+/* ------------------- Mantener el Footer al final ---------------------- */
+.container {
+  bottom: 0;
+  width: 100%;
+}
+
+/* -----------------------Footer Principal ------------------------------------- */
+.ft-main {
+  padding: 0.25rem 1rem;
+  justify-content: space-evenly;
+}
+
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+/* -----------------------Footer Principal, formulario subscripción ---------------- */
+input[type=email] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+
+input[type=submit] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+
+/* ----------------------- Footer Redes Sociales ------------------------------------- */
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+  text-align: center;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+  display: inline-block;
+}
+
+/* ----------------------- Footer Derechos de Autor  ------------------------------------- */
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+.ft-legal li {
+  margin: 0.125rem 0.625rem;
+}
+
+/* PEQUEÑO (Amado) → Tablets y Teléfonos grandes,
+ 600px and superior*/
+@media only screen and (max-width: 600px) {
+  .p-col-4 {
+    width: 100%;
+  }
+  .p-col-3 {
+    width: 75%;
+  }
+  .p-col-2 {
+    width: 50%;
+  }
+  .p-col-1 {
+    width: 25%;
+  }
+}
+.imgHan {
+  margin-left: 7%;
+  max-width: 81%;
+}
+
+.imgYoda {
+  margin-top: 0%;
+  margin-left: 7%;
+  max-width: 81%;
+}
+
+.imgLeia {
+  margin-left: 7%;
+  max-width: 81%;
+}
+
+.imgR2 {
+  margin-left: 7%;
+  max-width: 81%;
+}
+
+.recursos, .sobre, .ft-main-item {
+  display: none;
+}
+
+/* MEDIANO (Sara) → landscape tablets, 768px and superior*/
+@media only screen and (max-width: 899px) and (min-width: 601px) {
+  /*condicional para crear n columnas*/
+  .t-col-8 {
+    width: 100%;
+  }
+  .t-col-7 {
+    width: 87.5%;
+  }
+  .t-col-6 {
+    width: 75%;
+  }
+  .t-col-5 {
+    width: 62.5%;
+  }
+  .t-col-4 {
+    width: 50%;
+  }
+  .t-col-3 {
+    width: 37.5%;
+  }
+  .t-col-2 {
+    width: 25%;
+  }
+  .t-col-1 {
+    width: 12.5%;
+  }
+  body {
+    margin-top: 10%;
+  }
+  header {
+    margin-top: 0px;
+    position: sticky;
+    width: 100%;
+  }
+}
+/* GRANDE (Elena) → portátiles/Escritorio, 992px and superior*/
+@media only screen and (min-width: 900px) {
+  .e-col-12 {
+    width: 100%;
+  }
+  .e-col-11 {
+    width: 91.6666666667%;
+  }
+  .e-col-10 {
+    width: 83.3333333333%;
+  }
+  .e-col-9 {
+    width: 75%;
+  }
+  .e-col-8 {
+    width: 66.6666666667%;
+  }
+  .e-col-7 {
+    width: 58.3333333333%;
+  }
+  .e-col-6 {
+    width: 50%;
+  }
+  .e-col-5 {
+    width: 41.6666666667%;
+  }
+  .e-col-4 {
+    width: 33.3333333333%;
+  }
+  .e-col-3 {
+    width: 25%;
+  }
+  .e-col-2 {
+    width: 16.6666666667%;
+  }
+  .e-col-1 {
+    width: 8.3333333333%;
+  }
+  .recursos, .sobre, .ft-main-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* ------------------- Estilos Generales ---------------------- */
+  * {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+  }
+  footer a {
+    text-decoration: none;
+    color: #eee;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .ft-title {
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+  }
+  /* ------------------- Mantener el Footer al final ---------------------- */
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .container {
+    flex: 1;
+  }
+  /* -----------------------Footer Principal ------------------------------------- */
+  .ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* Footer main | Newsletter form */
+  /* ----------------------- Footer Redes Sociales ------------------------------------- */
+  /* ----------------------- Footer Derechos de Autor  ------------------------------------- */
+  /*-------------- Usar para Colocar a la derecha "@2023 Ies Francisco de Goya" ---------------*/
+}
+@media only screen and (min-width: 900px) and (min-width: 29.8125rem) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 900px) and (min-width: 77.5rem) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+  }
+  .ft-main-item p {
+    color: white;
+  }
+  .ft-main-item input {
+    color: black;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .row {
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 900px) {
+  input[type=email] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  input[type=submit] {
+    background-color: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .ft-social {
+    padding: 0 1.875rem 1.25rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .ft-social-list {
+    display: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+  }
+}
+.contenedor {
+  margin: 20px auto;
+  max-width: 100%;
+  width: 70%;
+  background-color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr td {
+  border-bottom: 1px solid #555555;
+  padding: 10px;
+}
+
+thead th {
+  padding: 10px;
+}
+
+.pictures {
+  padding-left: 17%;
+  display: flex;
+}
+
+picture {
+  display: inline;
+}
+
+.img {
+  width: 40px;
+}
+
+.jyn {
+  max-width: 100%;
+}
+
+.orson {
+  max-width: 50%;
+}
+
+.video-responsive {
+  width: 50%;
+  float: left;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  padding-bottom: 100px;
+}
+
+.section {
+  width: 30%;
+}
+
+/*MOVIL*/
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 3vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  .pictures {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 15%;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .jyn {
+    max-width: 50%;
+    margin-bottom: 30%;
+  }
+  .orson {
+    margin-top: 10%;
+  }
+}
+/*TABLET*/
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+  h1 {
+    font-size: 2vw;
+  }
+  .video-responsive {
+    width: 90%;
+    float: left;
+  }
+  .pictures {
+    padding-left: 10%;
+    display: block;
+  }
+  .pictures picture:nth-child(1) {
+    order: 1;
+    margin-left: 13%;
+  }
+  .pictures div:nth-child(2) {
+    order: 3;
+    margin-bottom: 1%;
+  }
+  .pictures picture:nth-child(3) {
+    order: 2;
+  }
+  .orson {
+    max-width: 30%;
+  }
+}
+/*ESCRITORIO*/
+@media only screen and (min-width: 901px) {
+  html {
+    font-size: 1vw;
+  }
+  h1 {
+    font-size: 2vw;
+  }
+}
+/* ESTILOS PARA OCULTAR CIERTAS COLUMNAS */
+table.hidden thead {
+  background-color: #555555;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .hidden td.primero,
+.hidden th.primero {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hidden td.segundo,
+.hidden th.segundo {
+    display: none;
+  }
+}
+/* ESTILOS PARA EL SCROLL CONTROLADO */
+div.scroll table {
+  margin-top: 50px;
+}
+
+div.scroll table thead {
+  background-color: #555555;
+  color: yellow;
+}
+
+div.scroll {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Start: Video Responsive */
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 400px;
+  /* Adecua este valor para controlar la altura del video */
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* End: Video Responsive */
+
+/*# sourceMappingURL=style.css.map */

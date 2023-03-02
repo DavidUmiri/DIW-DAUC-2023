@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+  <div class="element">(- . -)</div>
+<br>
+<h1>Page not found.</h1>
+<style>
+    body{
+        background-image: url(img/maxresdefault.jpg);
+        background-size:cover;
+        height: 510px;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .container{
+      position: relative;
+    }
+
+    .element {
+      color:white;
+      margin-top: 200px;
+      font-size: 200px;
+      text-align: center;
+      cursor: default;
+    }
+    h1{
+      color: white;
+      text-align: center;
+    }
+
+    .element:hover {
+      animation: shake 0.5s ease-in-out infinite;
+    }
+
+    @keyframes shake {
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+
+    }
+  </style>
+  <script>
+    let element = document.querySelector(".element");
+    element.addEventListener("mouseover", function() {
+      element.innerHTML = "(404)";
+    });
+    element.addEventListener("mouseout", function() {
+      element.innerHTML = "(- . -)";
+    });
+  </script>
+  </div>
+</body>
+</html>

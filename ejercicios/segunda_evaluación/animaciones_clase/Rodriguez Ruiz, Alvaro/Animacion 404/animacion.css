@@ -1,0 +1,184 @@
+body{
+    background-image: url(imagenes/chaval.jpg);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container .acabas{
+    color: white;
+    text-align: center;
+}
+
+.container .eso{
+    color: white;
+    text-align: center;
+}
+
+.pelota {
+    position: absolute;
+    animation: pelotita 3s alternate infinite ease-out;
+    /* border radius para que no se vea lo blanco */
+    border-radius: 50px;    
+  }
+  
+@keyframes pelotita {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 800px;
+    }
+}
+
+.e404{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+/* Declaracion de la animación */
+.boton {
+    background-color: yellow;
+    color: black;
+    align-self: center;
+    padding: 15px 32px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 20%;
+    border-radius: 5px;
+    
+  }
+  
+  .boton:hover {
+    background-color: blue;
+    transform: scale(1.1);
+    rotate: 150deg;
+  }
+  
+    /* https://www.cattocss.com/ */
+  
+.peligro{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    width: 200px;
+    height: 80px;
+    margin: 50px;
+    text-align: center;
+    background-color: red;
+    color: black;
+    
+    font-size: 40px;
+}
+.peligro:hover{
+    transform: skew(30deg, 20deg);
+    -webkit-transform: skew(30deg, 20deg);
+    -moz-transform: skew(30deg, 20deg);
+
+}
+
+.atencion{
+    background-color: red;
+    color: black;
+    margin-top: 1px;
+    align-self: flex-end;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    font-size: 50px;
+}
+
+.pagina{
+    background-color: red;
+    color: black;
+    margin-top: 1px;
+    align-self: flex-start;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    height: 150px;
+    font-size: 50px;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    align-self: flex-end;
+    -moz-transition: .5s, color .10s;
+}
+
+.pagina:hover{
+    transform: translate3d(12px, 50%, 3em);
+    -webkit-transform: translate3d(12px, 50%, 3em);
+    -moz-transform: translate3d(12px, 50%, 3em);
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+}
+              
+
+              
+.bounceShakeY{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+              
+
+              
+.bounceShakeY:hover{
+    animation-name: bounce-shakeY;
+    -webkit-animation-name: bounce-shakeY;
+    -moz-animation-name: bounce-shakeY;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    background-color: green;
+
+    -moz-animation-duration: 1s;
+}
+
+@keyframes bounce-shakeY{
+    0%  {transform: translateY(-50%);}
+    12% {transform: translateY(50%);}
+    24% {transform: translateY(-20%);}
+    36% {transform: translateY(20%);}
+    48% {transform: translateY(-10%);}
+    60% {transform: translateY(10%);}
+    72% {transform: translateY(-5%);}
+    84% {transform: translateY(5%);}
+    96% {transform: translateY(0%);}
+    100% {transform: translateY(0%);}
+}
+            
+.vini{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+.vini:hover{
+    transform: translatex(1000px);
+    -webkit-transform: translatex(1000px);
+    -moz-transform: translatex(1000px);
+}
+
+              
+.atencion{
+    transition: .5s, color .10s;
+    align-self: center;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    background-color: blue;
+}
+.atencion:hover{
+    transform: matrix(3.0, .5, 0, 1.0, 1.0, 1.0);
+    -webkit-transform: matrix(3.0, .5, 0, 1.0, 1.0, 1.0);
+    -moz-transform: matrix(3.0, .5, 0, 1.0, 1.0, 1.0);
+}
+      

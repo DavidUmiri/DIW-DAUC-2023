@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="error404.css">
+    <script>
+        function ocultar() {
+            document.getElementById('escritorio').style.display = 'none';
+            document.getElementById('ocultar').style.display = 'none';
+            document.getElementById('mostrar').style.display = 'none';
+            document.getElementById('errorFin').style.display = 'block';
+            document.getElementById('errorAparecer').style.display = 'none';
+            stop();
+        }
+        function autoplay()
+        {
+            document.getElementById('audio').play();
+            document.getElementById('ocultar').style.display = 'block';
+            document.getElementById('animaciones').style.display = 'block';
+        }
+        function stop() {
+            document.getElementById('audio').pause();
+        }
+        function mostrar()
+        {
+            document.getElementById('escritorio').style.display = 'block';
+            document.getElementById('errorFin').style.display = 'none';
+            document.getElementById('animaciones').style.display = 'none';
+            document.getElementById('errorFin').style.display = 'none';
+            autoplay();
+            document.getElementById('mostrar').style.display ='none';
+        }
+    </script>
+</head>
+<body>
+
+    <img id="real" src="https://pbs.twimg.com/media/CfERK7wWQAAgv5H?format=jpg&name=900x900" alt="">
+    <img id="porteria" src="./porteria.png" alt="">
+    <div id="error">
+        <p>4</p>
+        <img id="balon" src="balon.png" alt="">
+        <p>4</p>
+    </div>
+    <p id="movil">No deberías haber visto esto...<span>👀</span></p>
+    <p id="tablet"><span>Uuuy!</span>No sabes ni encontrar una página, vas a meter un gol <span>🙈</span></p>
+    <div id="escritorio">
+        <div id="animaciones">
+            <div>
+                <h1>Oh no...</h1>
+            </div>
+            <div>
+                <h1>¿Qué has hecho...?</h1>
+            </div>
+            <div>
+                <img src="messi.jpg" alt="">
+                <h1>¿Messi en el Madrid...?</h1>
+            </div>
+            <div>
+                <img src="cristianoMundial.jpg" alt="">
+                <h1>¿Cristiano ganando el mundial...?</h1>
+            </div>
+            <div>
+                <img src="atmChampios.png" alt="">
+                <h1>¿El Atlético con una Champions...?</h1>
+            </div>
+            <div>
+                <h1>No puede ser...</h1>
+            </div>
+            <div>
+                <h1>Creo que la has liado...</h1>
+            </div>
+            <div>
+                <h1>Has abierto una dimensión alternativa...</h1>
+            </div>
+        </div>
+        <input id="mostrar" type="button" value="Empezar animación" onclick="mostrar()">
+        <input id="ocultar" type="button" value="Ocultar animación" onclick="ocultar()">
+        <audio autoplay controls src="anonima.mp3" id="audio"></audio>
+    </div>
+    <div id="errorAparecer">
+        <h1>Error 404</h1>
+        <img src="balonDesin.png" alt="">
+        <br>
+        <small>clic en 'ocultar animaci&oacute;n' para parar m&uacute;sica</small>
+    </div>
+    <div id="errorFin">
+        <h1>Error 404</h1>
+        <img src="balonDesin.png" alt="">
+    </div>
+</body>
+</html>

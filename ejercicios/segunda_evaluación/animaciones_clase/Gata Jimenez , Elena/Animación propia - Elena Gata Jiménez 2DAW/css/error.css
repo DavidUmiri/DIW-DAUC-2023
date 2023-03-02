@@ -1,0 +1,264 @@
+/********************************** FONDO **********************************/
+.classGrande {
+  width: 100%;
+  display: flex;
+}
+
+.classNaveADch { 
+  z-index: 10;
+  position: absolute;
+  animation: nave1 20s linear infinite; 
+}
+
+.classNaveCDch { 
+  z-index: 10;
+  position: absolute;
+  transform: translate(0px, 400px);
+  animation: nave2 10s linear infinite;
+}
+
+.classNaveAbDch { 
+  z-index: 10;
+  position: absolute;
+  transform: translate(0px, 800px);
+  animation: nave3 15s linear infinite;
+}
+
+.classNaveAIz { 
+  z-index: 10;
+  position: absolute;
+  transform: translate(1700px, 200px);
+  animation: nave4 25s linear infinite;
+}
+
+.classNaveAbIz { 
+  z-index: 10;
+  position: absolute;
+  transform: translate(1750px, 600px);
+  animation: nave5 15s linear infinite;
+}
+
+.classNaveADch img {
+  width: 200px
+}
+
+.classNaveCDch img { 
+  width: 200px
+}
+
+.classNaveAbDch img { 
+  width: 200px
+}
+
+.classNaveAIz img { 
+  width: 200px
+}
+
+.classNaveAbIz img { 
+  width: 150px
+}
+
+@keyframes nave1 {
+  from {
+    /* posicionamiento y direccionamiento correcto de inicio */
+  }
+
+  40% {
+    /* llega a la posicion contraria */
+    transform: translate(1720px, 0px);
+  }
+
+  50% {
+    /* cuando está en la posición contraria se da la vuelta */
+    transform: translate(1720px, 0px) rotateY(180deg);
+  }
+
+  90% {
+    /* dado la vuelta, se traslada a su posicionamiento de inicio */
+    transform: translate(0px, 0px) rotateY(180deg);
+  }
+
+  to {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes nave2 {
+  from {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(0px, 400px);
+  }
+
+  40% {
+    /* llega a la posicion contraria */
+    transform: translate(1720px, 400px);
+  }
+
+  50% {
+    /* cuando está en la posición contraria se da la vuelta */
+    transform: translate(1720px, 400px) rotateY(180deg);
+  }
+
+  90% {
+    /* dado la vuelta, se traslada a su posicionamiento de inicio */
+    transform: translate(0px, 400px) rotateY(180deg);
+  }
+
+  to {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(0px, 400px);
+  }
+}
+
+@keyframes nave3 {
+  from {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(0px, 800px);
+  }
+
+  40% {
+    /* llega a la posicion contraria */
+    transform: translate(1720px, 800px);
+  }
+
+  50% {
+    /* cuando está en la posición contraria se da la vuelta */
+    transform: translate(1720px, 800px) rotateY(180deg);
+  }
+
+  90% {
+    /* dado la vuelta, se traslada a su posicionamiento de inicio */
+    transform: translate(0px, 800px) rotateY(180deg);
+  }
+
+  to {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(0px, 800px);
+  }
+}
+
+@keyframes nave4 {
+  from {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(1700px, 200px);
+  }
+
+  40% {
+    /* llega a la posicion contraria */
+    transform: translate(0px, 200px);
+  }
+
+  50% {
+    /* cuando está en la posición contraria se da la vuelta */
+    transform: translate(0px, 200px) rotateY(180deg);
+  }
+
+  90% {
+    /* dado la vuelta, se traslada a su posicionamiento de inicio */
+    transform: translate(1700px, 200px) rotateY(180deg);
+  }
+
+  to {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(1700px, 200px);
+  }
+}
+
+@keyframes nave5 {
+  from {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(1750px, 600px);
+  }
+
+  40% {
+    /* llega a la posicion contraria */
+    transform: translate(0px, 600px);
+  }
+
+  50% {
+    /* cuando está en la posición contraria se da la vuelta */
+    transform: translate(0px, 600px) rotateY(180deg);
+  }
+
+  90% {
+    /* dado la vuelta, se traslada a su posicionamiento de inicio */
+    transform: translate(1750px, 600px) rotateY(180deg);
+  }
+
+  to {
+    /* posicionamiento y direccionamiento correcto de inicio */
+    transform: translate(1750px, 600px);
+  }
+}
+
+/********************************** ERROR 404 **********************************/
+
+.classError { 
+  z-index: 11;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+
+.classTexto { 
+  z-index: 11;
+  position: absolute;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  left: 25%;
+  right: 25%;
+  top: 45%;
+}
+
+.classTexto p { 
+  text-align: center;
+  color: #ffdd55;
+}
+
+.classGif { 
+  z-index: 11;
+  position: absolute;
+  left: 37%;
+  top: 75%;
+}
+
+.classConfirm { 
+  z-index: 11;
+  position: absolute;
+  left: 38%;
+  top: 105%;
+}
+
+.classConfirm button {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px
+}
+
+/* ------------------- Estilos Generales ---------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;700&family=Rubik+Mono+One&display=swap");
+* {
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  z-index: -10;
+}
+
+
+body {
+  font-family: "Expletus Sans", sans-serif;
+  background-color: black;
+  color: #ffdd55;
+  margin: 0;
+}
