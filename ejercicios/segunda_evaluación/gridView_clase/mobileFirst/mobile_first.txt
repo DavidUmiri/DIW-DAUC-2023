@@ -1,0 +1,9 @@
+La temática que hemos elegido es de deportes en concreto fútbol. Lo que destaca de nuestra página web es la tabla responsive ya que usamos iconos de equipos que le dan un toque más vistoso. 
+
+También usamos la pseudo-clase :hover para realizar el cambio de tamaño de las fotos,video,texto así como el cambio de color 
+en las h2,fondo de los párrafos del nav y saturación en las imágenes. Además, cambiamos el cursor del ratón sobre cada párrafo.  
+Algo sutil pero efectivo es que hemos puesto un box-shadow a los div,tabla que hemos considerado que quedarían mejor. 
+Una aclaración esque para cada imagen hemos puesto un div(contenedor) para que la imagen coga el ancho de dicho div. 
+
+Por último destacar que para el texto hemos utilizado font-size para que sea responsive en cada media query. 
+Adjuntamos un video demostrativo(mobile_first.mp4). 

@@ -1,0 +1,50 @@
+$list: (".col-m-1", ".col-m-2", ".col-m-3", ".col-m-4");
+$tam: 0%;
+$color: red;
+
+@each $i in $list{
+    #{$i}{
+        width: ($tam: $tam + 25%);
+    }
+}
+
+//TABLET
+@media only screen and (min-width: 600px) {
+    $listTablet: (".col-s-1", ".col-s-2", ".col-s-3", ".col-s-4", ".col-s-5", ".col-s-6", ".col-s-7", ".col-s-8");
+    $tamTablet: 0%;
+
+    @each $i in $listTablet{
+        #{$i}{
+            width: ($tamTablet: $tamTablet + 12.5%);
+        }
+    }
+
+}
+@mixin divs($border: 1px solid black, $radius: 10px, $width: 99%, $margin-top: 5%, $fondo: white){
+    border: $border;
+    border-radius: $radius;
+    width: $width;
+    margin-top: $margin-top;
+    background-color: $fondo;
+}
+
+$listDiv: ("#div1", "#div2" "#div3");
+@each $i in $listDiv{
+    #{i}{
+        @include divs();
+    }
+}
+
+
+//ESCRITORIO
+@media only screen and (min-width: 900px) {
+    $listEscritorio: (".col-1", ".col-2", ".col-3", ".col-4", ".col-5", ".col-6", ".col-7", ".col-8", ".col-9", ".col-10", ".col-11", ".col-12");
+    $tamEscritorio: 0%;
+    @each $i in $listEscritorio{
+        #{$i}{
+            width: ($tamEscritorio: $tamEscritorio + 8.33%);
+        }
+    }
+}
+
+

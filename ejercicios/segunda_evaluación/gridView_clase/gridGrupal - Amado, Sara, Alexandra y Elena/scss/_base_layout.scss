@@ -1,0 +1,224 @@
+/* ------------------- Estilos Generales ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;700&family=Rubik+Mono+One&display=swap');
+
+*{
+  box-sizing: border-box;
+  color: #ffdd55;
+  // background-color: #777;
+  text-align: justify;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  z-index: -10;
+}
+
+#fondo {
+  max-width: 100%;
+}
+
+body{
+  font-family: 'Expletus Sans', sans-serif;
+  background-color: black;
+  color: #ffdd55;
+  margin: 0;
+}
+
+::selection{
+  background-color: #ffdd55;
+  color: black;
+}
+
+::-moz-selection{
+  background-color: #ffdd55;
+  color: black;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+h1{
+  margin: 80px 0;
+  font-size: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Rubik Mono One', sans-serif;
+  transform: rotateX(6deg);
+}
+
+h2{
+  width: 75%;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 10%;
+  border: 2px solid #ffdd55;
+  border-radius: 5px;
+  color: #ffdd55;
+  padding: 10px 20px;
+  transform: rotate3d(1,0,0,12deg) translateY(-20px);
+  transition: all .7s ease-in-out;
+  cursor: default;
+  letter-spacing: -2px;
+
+  &:hover{
+    transform: scale(1.2) rotate3d(1,0,0,2deg) translateY(-20px);
+    color: white;
+  }
+}
+
+h3{
+  font-size: 3rem;
+  text-align: center;
+  border: 2px solid #ffdd55;
+  border-radius: 5px;
+  color: #ffdd55;
+  padding: 10px 20px;
+  transform: rotate3d(1,0,0,12deg) translateY(-20px);
+  transition: all .7s ease-in-out;
+  cursor: default;
+}
+
+small{
+  margin-top: 20px;
+  color: gray;
+  display: block;
+}
+
+button{
+  color: #ffdd55;
+  background-color:black;
+  border: 2px solid #ffdd55;
+  padding: 10px 20px;
+  cursor: pointer;  
+  font-family: 'Expletus Sans', cursive;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all .4s ease-in-out;
+}
+
+.container{
+  width: 550px;
+  margin: auto;
+  align-items: center;  
+  perspective: 150px;
+}
+
+.row {
+  p {
+    margin: 5%;
+  }
+  z-index: 100;
+  background-color: black;
+}
+
+.secondary-info{
+  width: inherit;
+  margin-bottom: 30px;
+  border-width: 0 0 0 1px;
+  border-color: #ffdd55;
+  border-style: solid;
+  padding: 0 0 0 10px;
+  margin: 50px 85px;
+}
+
+footer {  
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: #eee;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li {
+    list-style:none;    
+  }
+}
+  
+.ft-title {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+.imgYoda{
+  margin-top: 10%;
+}
+
+/* ------------------- Mantener el Footer al final ---------------------- */
+.container {
+  bottom: 0;
+  width: 100%;
+}
+/* -----------------------Footer Principal ------------------------------------- */
+.ft-main {
+  padding: 0.25rem 1rem;
+  justify-content: space-evenly
+}
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+/* -----------------------Footer Principal, formulario subscripción ---------------- */
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+
+input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+/* ----------------------- Footer Redes Sociales ------------------------------------- */
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+  text-align: center;
+
+  li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+    display: inline-block;
+  }
+}
+/* ----------------------- Footer Derechos de Autor  ------------------------------------- */
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+
+  li {
+    margin: 0.125rem 0.625rem;
+  }
+}
