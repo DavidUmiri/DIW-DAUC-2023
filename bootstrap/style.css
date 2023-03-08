@@ -3,6 +3,7 @@
 .navbar {
   padding: 2rem;
   background-color: #f5f6f7;
+  font-size: 1.3rem;
 }
 
 .navbar-collapse {
@@ -78,8 +79,8 @@ h1 {
 }
 
 .hero-imagen-desarrollador {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 20px;
 }
 
@@ -245,8 +246,10 @@ h1 {
 }
 
 .testimonio-imagen {
-  height: 150px;
-  width: 150px;
+  max-width: 50%;
+  max-height: 50%;
+  /* height: 150px; */
+  /* width: 150px; */
   margin: 10px 10px 20px 10px;
 }
 
@@ -334,8 +337,10 @@ footer {
 }
 
 .footer-logo {
-  height: 80px;
-  width: 80px;
+  max-height: 50%;
+  max-width: 50%;
+  /* height: 80px; */
+  /* width: 80px; */
   margin: 10px;
 }
 
