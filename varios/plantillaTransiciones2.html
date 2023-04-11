@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <article>
+        <img src="goku2.jpg" alt="">
+        <img src="goku.jpg" alt="">
+    </article>
+    <style>
+        body {
+            display: flex;
+            margin-top: 5%;
+            justify-content: center;
+        }
+
+        article {
+            position: relative;
+            width: 20%;
+            transition: all .3s ease;
+        }
+
+        article img:first-child {
+            box-shadow: 0 60px 60px -60px black;
+            border-radius: 10px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        article img:last-child {
+            border-radius: 10px;
+            object-fit: cover;
+            width: 100%;
+            position: absolute;
+            width: 75%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: translate(25%);
+            transition: .3s ease;
+            opacity: 0;
+        }
+
+        article:hover {
+            transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+        }
+
+        article::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to bottom, transparent 10%, black 50%, black 95%);
+            opacity: 0;
+            transition: all .3s ease;
+            border-radius: 10px;
+        }
+
+        article:hover::before {
+            opacity: 1;
+        }
+
+        article:hover img:last-child {
+            opacity: 1;
+            transform: translateY(-5%);
+            border-radius: 10px;
+        }
+    </style>
+</body>
+
+</html>
